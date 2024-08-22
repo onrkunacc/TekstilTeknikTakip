@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Infrastructure;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,83 @@ namespace ALBTekstil.Formlar
         }
 
         private void labelControl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ALB_URUNLER u = new ALB_URUNLER();
+                u.Urun_Adi = TxtUrunAd.Text;
+                u.Urun_Barkod = TxtBarkod.Text;
+                u.Alis_Fiyati = decimal.Parse(TxtAlisFiyat.Text);
+                u.Satis_Fiyati = decimal.Parse(TxtSatisFiyat.Text);
+                u.Olcu_Birimi = TxtOlcuBirimi.Text;
+                u.Stok_Durumu = TxtStokDurum.Text;
+                u.Stok_Miktari = decimal.Parse(TxtStokMiktar.Text);
+                db.ALB_URUNLER.Add(u);
+                db.SaveChanges();
+                MessageBox.Show("Ürün başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                MessageBox.Show("Kaydetme sırasında bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = db.ALB_URUNLER.ToList();
+            gridControl1.DataSource = degerler;
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            // URUNID alanını kontrol et
+            var urunIdValue = gridView1.GetFocusedRowCellValue("Urun_ID");
+            TxtId.Text = urunIdValue != null ? urunIdValue.ToString() : string.Empty;
+
+            // AD alanını kontrol et
+            var urunAdValue = gridView1.GetFocusedRowCellValue("Urun_Adi");
+            TxtUrunAd.Text = urunAdValue != null ? urunAdValue.ToString() : string.Empty;
+
+            // BARKOD alanını kontrol et
+            var barkodValue = gridView1.GetFocusedRowCellValue("Urun_Barkod");
+            TxtBarkod.Text = barkodValue != null ? barkodValue.ToString() : string.Empty;
+
+            // ALISFIYAT alanını kontrol et
+            var alisFiyatValue = gridView1.GetFocusedRowCellValue("Alis_Fiyati");
+            TxtAlisFiyat.Text = alisFiyatValue != null ? alisFiyatValue.ToString() : string.Empty;
+
+            // SATISFIYAT alanını kontrol et
+            var satisFiyatValue = gridView1.GetFocusedRowCellValue("Satis_Fiyati");
+            TxtSatisFiyat.Text = satisFiyatValue != null ? satisFiyatValue.ToString() : string.Empty;
+
+            // OLCUBIRIMI alanını kontrol et
+            var olcuBirimiValue = gridView1.GetFocusedRowCellValue("Olcu_Birimi");
+            TxtOlcuBirimi.Text = olcuBirimiValue != null ? olcuBirimiValue.ToString() : string.Empty;
+
+            // STOKDURUM alanını kontrol et
+            var stokDurumValue = gridView1.GetFocusedRowCellValue("Stok_Durumu");
+            TxtStokDurum.Text = stokDurumValue != null ? stokDurumValue.ToString() : string.Empty;
+
+            // STOKMIKTAR alanını kontrol et
+            var stokMiktarValue = gridView1.GetFocusedRowCellValue("Stok_Miktari");
+            TxtStokMiktar.Text = stokMiktarValue != null ? stokMiktarValue.ToString() : string.Empty;
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(TxtId.Text);
+            var deger = db.ALB_URUNLER.Find(id);
+            db.ALB_URUNLER.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Ürün başarıyla silindi!","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
         {
 
         }

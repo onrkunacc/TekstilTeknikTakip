@@ -32,37 +32,41 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.Kategori = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtStokMiktar = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtStokDurum = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtOlcuBirimi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSatisFiyat = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtAlisFiyat = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtBarkod = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtId = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kategori.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtStokMiktar.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtStokDurum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOlcuBirimi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSatisFiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBarkod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -84,27 +88,31 @@
             this.gridView1.Appearance.Row.Options.UseBorderColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.simpleButton3);
-            this.groupControl1.Controls.Add(this.simpleButton2);
-            this.groupControl1.Controls.Add(this.simpleButton1);
-            this.groupControl1.Controls.Add(this.lookUpEdit1);
+            this.groupControl1.Controls.Add(this.TxtId);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.BtnListele);
+            this.groupControl1.Controls.Add(this.BtnGuncelle);
+            this.groupControl1.Controls.Add(this.BtnSil);
+            this.groupControl1.Controls.Add(this.BtnKaydet);
+            this.groupControl1.Controls.Add(this.Kategori);
             this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.textEdit7);
+            this.groupControl1.Controls.Add(this.TxtStokMiktar);
             this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.textEdit6);
+            this.groupControl1.Controls.Add(this.TxtStokDurum);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.textEdit5);
+            this.groupControl1.Controls.Add(this.TxtOlcuBirimi);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.TxtSatisFiyat);
             this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.textEdit3);
+            this.groupControl1.Controls.Add(this.TxtAlisFiyat);
             this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.TxtBarkod);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.TxtUrunAd);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(1542, 0);
             this.groupControl1.Name = "groupControl1";
@@ -112,179 +120,212 @@
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Ürün İşlemleri";
             // 
-            // simpleButton3
+            // BtnGuncelle
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(317, 532);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(133, 53);
-            this.simpleButton3.TabIndex = 21;
-            this.simpleButton3.Text = "GÜNCELLE";
+            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGuncelle.Appearance.Options.UseFont = true;
+            this.BtnGuncelle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(320, 605);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(133, 53);
+            this.BtnGuncelle.TabIndex = 21;
+            this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
-            // simpleButton2
+            // BtnSil
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(178, 532);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(133, 53);
-            this.simpleButton2.TabIndex = 20;
-            this.simpleButton2.Text = "SİL";
+            this.BtnSil.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.BtnSil.Appearance.Options.UseFont = true;
+            this.BtnSil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.BtnSil.Location = new System.Drawing.Point(181, 605);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(133, 53);
+            this.BtnSil.TabIndex = 20;
+            this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
-            // simpleButton1
+            // BtnKaydet
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(39, 532);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(133, 53);
-            this.simpleButton1.TabIndex = 19;
-            this.simpleButton1.Text = "KAYDET";
+            this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.BtnKaydet.Appearance.Options.UseFont = true;
+            this.BtnKaydet.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage1")));
+            this.BtnKaydet.Location = new System.Drawing.Point(42, 605);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(133, 53);
+            this.BtnKaydet.TabIndex = 19;
+            this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // lookUpEdit1
+            // Kategori
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(201, 479);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.Kategori.Location = new System.Drawing.Point(204, 552);
+            this.Kategori.Name = "Kategori";
+            this.Kategori.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(216, 22);
-            this.lookUpEdit1.TabIndex = 18;
+            this.Kategori.Size = new System.Drawing.Size(216, 22);
+            this.Kategori.TabIndex = 18;
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(41, 482);
+            this.labelControl8.Location = new System.Drawing.Point(44, 555);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(78, 19);
             this.labelControl8.TabIndex = 17;
             this.labelControl8.Text = "Kategori :";
             this.labelControl8.Click += new System.EventHandler(this.labelControl8_Click);
             // 
-            // textEdit7
+            // TxtStokMiktar
             // 
-            this.textEdit7.Location = new System.Drawing.Point(201, 427);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(216, 22);
-            this.textEdit7.TabIndex = 16;
+            this.TxtStokMiktar.Location = new System.Drawing.Point(204, 500);
+            this.TxtStokMiktar.Name = "TxtStokMiktar";
+            this.TxtStokMiktar.Size = new System.Drawing.Size(216, 22);
+            this.TxtStokMiktar.TabIndex = 16;
             // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(41, 430);
+            this.labelControl7.Location = new System.Drawing.Point(44, 503);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(102, 19);
             this.labelControl7.TabIndex = 15;
             this.labelControl7.Text = "Stok Miktarı :";
             // 
-            // textEdit6
+            // TxtStokDurum
             // 
-            this.textEdit6.Location = new System.Drawing.Point(201, 382);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(216, 22);
-            this.textEdit6.TabIndex = 14;
+            this.TxtStokDurum.Location = new System.Drawing.Point(204, 455);
+            this.TxtStokDurum.Name = "TxtStokDurum";
+            this.TxtStokDurum.Size = new System.Drawing.Size(216, 22);
+            this.TxtStokDurum.TabIndex = 14;
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(41, 385);
+            this.labelControl6.Location = new System.Drawing.Point(44, 458);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(112, 19);
             this.labelControl6.TabIndex = 13;
             this.labelControl6.Text = "Stok Durumu :";
             // 
-            // textEdit5
+            // TxtOlcuBirimi
             // 
-            this.textEdit5.Location = new System.Drawing.Point(201, 325);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(216, 22);
-            this.textEdit5.TabIndex = 12;
+            this.TxtOlcuBirimi.Location = new System.Drawing.Point(204, 398);
+            this.TxtOlcuBirimi.Name = "TxtOlcuBirimi";
+            this.TxtOlcuBirimi.Size = new System.Drawing.Size(216, 22);
+            this.TxtOlcuBirimi.TabIndex = 12;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(41, 328);
+            this.labelControl5.Location = new System.Drawing.Point(44, 401);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(97, 19);
             this.labelControl5.TabIndex = 11;
             this.labelControl5.Text = "Ölçü Birimi :";
             // 
-            // textEdit4
+            // TxtSatisFiyat
             // 
-            this.textEdit4.Location = new System.Drawing.Point(201, 276);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(216, 22);
-            this.textEdit4.TabIndex = 10;
+            this.TxtSatisFiyat.Location = new System.Drawing.Point(204, 349);
+            this.TxtSatisFiyat.Name = "TxtSatisFiyat";
+            this.TxtSatisFiyat.Size = new System.Drawing.Size(216, 22);
+            this.TxtSatisFiyat.TabIndex = 10;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(41, 279);
+            this.labelControl4.Location = new System.Drawing.Point(44, 352);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(92, 19);
             this.labelControl4.TabIndex = 9;
             this.labelControl4.Text = "Satış Fiyatı :";
             // 
-            // textEdit3
+            // TxtAlisFiyat
             // 
-            this.textEdit3.Location = new System.Drawing.Point(201, 224);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(216, 22);
-            this.textEdit3.TabIndex = 8;
+            this.TxtAlisFiyat.Location = new System.Drawing.Point(204, 297);
+            this.TxtAlisFiyat.Name = "TxtAlisFiyat";
+            this.TxtAlisFiyat.Size = new System.Drawing.Size(216, 22);
+            this.TxtAlisFiyat.TabIndex = 8;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(41, 227);
+            this.labelControl3.Location = new System.Drawing.Point(44, 300);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(85, 19);
             this.labelControl3.TabIndex = 7;
             this.labelControl3.Text = "Alış Fiyatı :";
             this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
             // 
-            // textEdit2
+            // TxtBarkod
             // 
-            this.textEdit2.Location = new System.Drawing.Point(201, 175);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(216, 22);
-            this.textEdit2.TabIndex = 6;
+            this.TxtBarkod.Location = new System.Drawing.Point(204, 248);
+            this.TxtBarkod.Name = "TxtBarkod";
+            this.TxtBarkod.Size = new System.Drawing.Size(216, 22);
+            this.TxtBarkod.TabIndex = 6;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(41, 178);
+            this.labelControl2.Location = new System.Drawing.Point(44, 251);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(108, 19);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Ürün Barkod :";
             this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
-            // textEdit1
+            // TxtUrunAd
             // 
-            this.textEdit1.Location = new System.Drawing.Point(201, 131);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(216, 22);
-            this.textEdit1.TabIndex = 4;
+            this.TxtUrunAd.Location = new System.Drawing.Point(204, 204);
+            this.TxtUrunAd.Name = "TxtUrunAd";
+            this.TxtUrunAd.Size = new System.Drawing.Size(216, 22);
+            this.TxtUrunAd.TabIndex = 4;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(41, 134);
+            this.labelControl1.Location = new System.Drawing.Point(44, 207);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(78, 19);
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Ürün Adı :";
+            // 
+            // BtnListele
+            // 
+            this.BtnListele.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnListele.Appearance.Options.UseFont = true;
+            this.BtnListele.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.BtnListele.Location = new System.Drawing.Point(181, 683);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(133, 53);
+            this.BtnListele.TabIndex = 22;
+            this.BtnListele.Text = "LİSTELE";
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+            // 
+            // TxtId
+            // 
+            this.TxtId.Enabled = false;
+            this.TxtId.Location = new System.Drawing.Point(204, 165);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(216, 22);
+            this.TxtId.TabIndex = 24;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(44, 168);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(67, 19);
+            this.labelControl9.TabIndex = 23;
+            this.labelControl9.Text = "Ürün ID :";
             // 
             // FrmUrunListesi
             // 
@@ -302,14 +343,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kategori.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtStokMiktar.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtStokDurum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOlcuBirimi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSatisFiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBarkod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -319,24 +361,27 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit TxtAlisFiyat;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit TxtBarkod;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtUrunAd;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit TxtStokMiktar;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit TxtStokDurum;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit TxtOlcuBirimi;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit TxtSatisFiyat;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit Kategori;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton BtnSil;
+        private DevExpress.XtraEditors.SimpleButton BtnKaydet;
+        private DevExpress.XtraEditors.SimpleButton BtnListele;
+        private DevExpress.XtraEditors.TextEdit TxtId;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
     }
 }
