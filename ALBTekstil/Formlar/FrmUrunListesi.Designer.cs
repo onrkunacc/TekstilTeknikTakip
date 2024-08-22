@@ -32,10 +32,13 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtId = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.Kategori = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.TxtStokMiktar = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -51,14 +54,12 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtId = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Kategori.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStokMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStokDurum.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtOlcuBirimi.Properties)).BeginInit();
@@ -66,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBarkod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -74,7 +74,7 @@
             this.gridControl1.Location = new System.Drawing.Point(-1, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1537, 803);
+            this.gridControl1.Size = new System.Drawing.Size(1537, 774);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -98,7 +98,7 @@
             this.groupControl1.Controls.Add(this.BtnGuncelle);
             this.groupControl1.Controls.Add(this.BtnSil);
             this.groupControl1.Controls.Add(this.BtnKaydet);
-            this.groupControl1.Controls.Add(this.Kategori);
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.TxtStokMiktar);
             this.groupControl1.Controls.Add(this.labelControl7);
@@ -116,15 +116,46 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(1542, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(784, 801);
+            this.groupControl1.Size = new System.Drawing.Size(784, 774);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Ürün İşlemleri";
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // TxtId
+            // 
+            this.TxtId.Enabled = false;
+            this.TxtId.Location = new System.Drawing.Point(204, 165);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(216, 22);
+            this.TxtId.TabIndex = 24;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(44, 168);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(67, 19);
+            this.labelControl9.TabIndex = 23;
+            this.labelControl9.Text = "Ürün ID :";
+            // 
+            // BtnListele
+            // 
+            this.BtnListele.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnListele.Appearance.Options.UseFont = true;
+            this.BtnListele.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnListele.ImageOptions.SvgImage")));
+            this.BtnListele.Location = new System.Drawing.Point(181, 683);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(133, 53);
+            this.BtnListele.TabIndex = 22;
+            this.BtnListele.Text = "LİSTELE";
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.BtnGuncelle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnGuncelle.ImageOptions.SvgImage")));
             this.BtnGuncelle.Location = new System.Drawing.Point(320, 605);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(133, 53);
@@ -136,7 +167,7 @@
             // 
             this.BtnSil.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.BtnSil.Appearance.Options.UseFont = true;
-            this.BtnSil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.BtnSil.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnSil.ImageOptions.SvgImage")));
             this.BtnSil.Location = new System.Drawing.Point(181, 605);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(133, 53);
@@ -148,7 +179,7 @@
             // 
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
             this.BtnKaydet.Appearance.Options.UseFont = true;
-            this.BtnKaydet.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage1")));
+            this.BtnKaydet.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnKaydet.ImageOptions.SvgImage")));
             this.BtnKaydet.Location = new System.Drawing.Point(42, 605);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(133, 53);
@@ -156,14 +187,16 @@
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // Kategori
+            // lookUpEdit1
             // 
-            this.Kategori.Location = new System.Drawing.Point(204, 552);
-            this.Kategori.Name = "Kategori";
-            this.Kategori.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEdit1.Location = new System.Drawing.Point(204, 552);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Kategori.Size = new System.Drawing.Size(216, 22);
-            this.Kategori.TabIndex = 18;
+            this.lookUpEdit1.Properties.DisplayMember = "KategoriAdi";
+            this.lookUpEdit1.Properties.ValueMember = "Kategori_ID";
+            this.lookUpEdit1.Size = new System.Drawing.Size(216, 22);
+            this.lookUpEdit1.TabIndex = 18;
             // 
             // labelControl8
             // 
@@ -297,36 +330,6 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Ürün Adı :";
             // 
-            // BtnListele
-            // 
-            this.BtnListele.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnListele.Appearance.Options.UseFont = true;
-            this.BtnListele.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.BtnListele.Location = new System.Drawing.Point(181, 683);
-            this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(133, 53);
-            this.BtnListele.TabIndex = 22;
-            this.BtnListele.Text = "LİSTELE";
-            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
-            // 
-            // TxtId
-            // 
-            this.TxtId.Enabled = false;
-            this.TxtId.Location = new System.Drawing.Point(204, 165);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(216, 22);
-            this.TxtId.TabIndex = 24;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(44, 168);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(67, 19);
-            this.labelControl9.TabIndex = 23;
-            this.labelControl9.Text = "Ürün ID :";
-            // 
             // FrmUrunListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -343,7 +346,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Kategori.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStokMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtStokDurum.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtOlcuBirimi.Properties)).EndInit();
@@ -351,7 +355,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBarkod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -375,7 +378,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit TxtSatisFiyat;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LookUpEdit Kategori;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;

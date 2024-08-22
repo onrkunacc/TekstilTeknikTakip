@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,11 +25,29 @@ namespace ALBTekstil.Formlar
         }
 
         DB_ALBER_TEKSTİLEntities db = new DB_ALBER_TEKSTİLEntities();
+        void Metot1()
+        {
+            var degerler = from urun in db.ALB_URUNLER
+                           select new
+                           {
+                               urun.Urun_ID,
+                               urun.Urun_Adi,
+                               urun.Urun_Barkod,
+                               urun.ALB_KATEGORILER.KategoriAdi,
+                               urun.Alis_Fiyati,
+                               urun.Satis_Fiyati,
+                               urun.Olcu_Birimi,
+                               urun.Stok_Durumu,
+                               urun.Stok_Miktari
+                           };
+            gridControl1.DataSource = degerler.ToList();
+        }
         private void FrmUrunListesi_Load(object sender, EventArgs e)
         {
             //Listeleme ToList Add Remove
-            var degerler = db.ALB_URUNLER.ToList();
-            gridControl1.DataSource = degerler; 
+            //var degerler = db.ALB_URUNLER.ToList();
+            Metot1();           
+            lookUpEdit1.Properties.DataSource = db.ALB_KATEGORILER.ToList();
         }
 
         private void labelControl1_Click(object sender, EventArgs e)
@@ -63,6 +82,7 @@ namespace ALBTekstil.Formlar
                 u.Olcu_Birimi = TxtOlcuBirimi.Text;
                 u.Stok_Durumu = TxtStokDurum.Text;
                 u.Stok_Miktari = decimal.Parse(TxtStokMiktar.Text);
+                u.Kategori_ID = int.Parse(lookUpEdit1.EditValue.ToString());
                 db.ALB_URUNLER.Add(u);
                 db.SaveChanges();
                 MessageBox.Show("Ürün başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -75,8 +95,7 @@ namespace ALBTekstil.Formlar
 
         private void BtnListele_Click(object sender, EventArgs e)
         {
-            var degerler = db.ALB_URUNLER.ToList();
-            gridControl1.DataSource = degerler;
+            Metot1();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -124,6 +143,25 @@ namespace ALBTekstil.Formlar
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(TxtId.Text);
+            var deger = db.ALB_URUNLER.Find(id);
+            deger.Urun_Adi = TxtUrunAd.Text;
+            deger.Urun_Barkod = TxtBarkod.Text;
+            deger.Alis_Fiyati = decimal.Parse(TxtAlisFiyat.Text);
+            deger.Satis_Fiyati = decimal.Parse(TxtSatisFiyat.Text);
+            deger.Olcu_Birimi = TxtOlcuBirimi.Text;
+            deger.Stok_Durumu = TxtStokDurum.Text;
+            deger.Stok_Miktari = decimal.Parse(TxtStokMiktar.Text);
+            deger.Kategori_ID = int.Parse(lookUpEdit1.EditValue.ToString());
+            db.SaveChanges();
+            MessageBox.Show("Ürün bilgileri başarıyla güncellendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
 
         }
