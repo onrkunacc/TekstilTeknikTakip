@@ -64,5 +64,19 @@ namespace ALBTekstil
             //bu form üzerinden çalışsın
             fr.Show();
         }
+
+        private void BtnYeniKategori_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYeniKategori frm = new Formlar.FrmYeniKategori();
+            frm.Show();
+        }
+
+        private void Btnİstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Frmİstatistik fr = new Formlar.Frmİstatistik();
+            fr.MdiParent = this;
+            //bu form üzerinden çalışsın
+            fr.Show();
+        }
     }
 }
