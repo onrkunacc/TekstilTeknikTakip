@@ -165,5 +165,10 @@ namespace ALBTekstil.Formlar
         {
 
         }
+
+        private void TxtId_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

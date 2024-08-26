@@ -89,5 +89,12 @@ namespace ALBTekstil
             //bu form üzerinden çalışsın
             fr.Show();
         }
+
+        private void barButtonItem3_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmCariEkle fr = new Formlar.FrmCariEkle();   
+            //bu form üzerinden çalışsın
+            fr.Show();
+        }
     }
 }

@@ -128,6 +128,7 @@
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(216, 22);
             this.TxtId.TabIndex = 24;
+            this.TxtId.EditValueChanged += new System.EventHandler(this.TxtId_EditValueChanged);
             // 
             // labelControl9
             // 
