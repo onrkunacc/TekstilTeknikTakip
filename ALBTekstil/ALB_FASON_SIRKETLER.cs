@@ -12,25 +12,19 @@ namespace ALBTekstil
     using System;
     using System.Collections.Generic;
     
-    public partial class ALB_MUSTERILER
+    public partial class ALB_FASON_SIRKETLER
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ALB_MUSTERILER()
+        public ALB_FASON_SIRKETLER()
         {
-            this.ALB_SIPARISLER = new HashSet<ALB_SIPARISLER>();
+            this.ALB_FASON_TAKIP = new HashSet<ALB_FASON_TAKIP>();
         }
     
-        public int Musteri_ID { get; set; }
-        public string Musteri_Adi { get; set; }
-        public string Musteri_Soyad { get; set; }
-        public string Musteri_Sirket { get; set; }
-        public string Musteri_Tel_No { get; set; }
-        public string Musteri_Mail { get; set; }
-        public string Musteri_Adres { get; set; }
-        public string Musteri_Il { get; set; }
-        public string Musteri_Ilce { get; set; }
+        public int Fason_Sirket_ID { get; set; }
+        public string Sirket_Adi { get; set; }
+        public string Iletisim_Bilgileri { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ALB_SIPARISLER> ALB_SIPARISLER { get; set; }
+        public virtual ICollection<ALB_FASON_TAKIP> ALB_FASON_TAKIP { get; set; }
     }
 }

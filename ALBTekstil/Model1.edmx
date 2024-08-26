@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DB_ALBER_TEKSTİLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DB_ALBER_TEKSTİLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ALB_BARKODGUNCELLEME">
           <Key>
             <PropertyRef Name="Kayıt_ID" />
@@ -37,6 +37,25 @@
           <Property Name="Departman_Adi" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Aciklama" Type="nvarchar(max)" />
         </EntityType>
+        <EntityType Name="ALB_FASON_SIRKETLER">
+          <Key>
+            <PropertyRef Name="Fason_Sirket_ID" />
+          </Key>
+          <Property Name="Fason_Sirket_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sirket_Adi" Type="nvarchar" MaxLength="255" />
+          <Property Name="Iletisim_Bilgileri" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ALB_FASON_TAKIP">
+          <Key>
+            <PropertyRef Name="Fason_Takip_ID" />
+          </Key>
+          <Property Name="Fason_Takip_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_ID" Type="int" />
+          <Property Name="Fason_Sirket_ID" Type="int" />
+          <Property Name="Gonderilen_Miktar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Gonderim_Tarihi" Type="date" />
+          <Property Name="Durum" Type="nvarchar" MaxLength="255" />
+        </EntityType>
         <EntityType Name="ALB_FINANS">
           <Key>
             <PropertyRef Name="Finans_Islem_ID" />
@@ -53,6 +72,17 @@
           </Key>
           <Property Name="Hareket_Tip_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Hareket_Tipi" Type="nvarchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ALB_IS_EMIRLERI">
+          <Key>
+            <PropertyRef Name="Is_Emri_Id" />
+          </Key>
+          <Property Name="Is_Emri_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_ID" Type="int" />
+          <Property Name="Is_Emri_Tarihi" Type="date" />
+          <Property Name="Beklenen_Tamamlanma_Tarihi" Type="date" />
+          <Property Name="Sorumlu_Personel_ID" Type="int" />
+          <Property Name="Durum" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="ALB_KATEGORILER">
           <Key>
@@ -81,8 +111,20 @@
           <Property Name="Musteri_Adi" Type="nvarchar" MaxLength="255" />
           <Property Name="Musteri_Soyad" Type="nvarchar" MaxLength="255" />
           <Property Name="Musteri_Sirket" Type="nvarchar" MaxLength="255" />
-          <Property Name="Musteri_Tel_No" Type="int" />
+          <Property Name="Musteri_Tel_No" Type="nvarchar" MaxLength="50" />
           <Property Name="Musteri_Mail" Type="nvarchar" MaxLength="255" />
+          <Property Name="Musteri_Adres" Type="nvarchar" MaxLength="255" />
+          <Property Name="Musteri_Il" Type="nvarchar" MaxLength="50" />
+          <Property Name="Musteri_Ilce" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ALB_NOTLAR">
+          <Key>
+            <PropertyRef Name="Not_Id" />
+          </Key>
+          <Property Name="Not_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Not_Baslik" Type="varchar" MaxLength="50" />
+          <Property Name="Not_Icerik" Type="varchar" MaxLength="500" />
+          <Property Name="Not_Durum" Type="bit" />
         </EntityType>
         <EntityType Name="ALB_PERSONEL">
           <Key>
@@ -91,8 +133,8 @@
           <Property Name="Personel_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Personel_Adi" Type="nvarchar" MaxLength="255" />
           <Property Name="Personel_Soyadi" Type="nvarchar" MaxLength="255" />
-          <Property Name="Personel_TC" Type="int" />
-          <Property Name="Personel_Tel_No" Type="int" />
+          <Property Name="Personel_TC" Type="nvarchar" MaxLength="50" />
+          <Property Name="Personel_Tel_No" Type="nvarchar" MaxLength="50" />
           <Property Name="Personel_Mail" Type="nvarchar" MaxLength="255" />
           <Property Name="Personel_Pozisyon" Type="nvarchar" MaxLength="255" />
           <Property Name="Departman_ID" Type="int" />
@@ -137,6 +179,35 @@
           <Property Name="Maximum_Stok" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Uyarı_Seviyesi" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
+        <EntityType Name="ALB_TOPLAM_URETIM_MALIYETLERI">
+          <Key>
+            <PropertyRef Name="Toplam_Maliyet_ID" />
+          </Key>
+          <Property Name="Toplam_Maliyet_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_ID" Type="int" />
+          <Property Name="Toplam_Maliyet" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Hesaplama_Tarihi" Type="date" />
+          <Property Name="Aciklama" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="ALB_URETIM_MALIYETLERI">
+          <Key>
+            <PropertyRef Name="Maliyet_ID" />
+          </Key>
+          <Property Name="Maliyet_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_ID" Type="int" />
+          <Property Name="Maliyet_Kalem" Type="nvarchar" MaxLength="255" />
+          <Property Name="Miktar" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Birim_Maliyet" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Toplam_Maliyet" Type="decimal" Precision="37" Scale="4" StoreGeneratedPattern="Computed" />
+          <Property Name="Tarih" Type="date" />
+        </EntityType>
+        <EntityType Name="ALB_URUN_DURUM">
+          <Key>
+            <PropertyRef Name="Durum_ID" />
+          </Key>
+          <Property Name="Durum_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Durum_Adi" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
         <EntityType Name="ALB_URUNLER">
           <Key>
             <PropertyRef Name="Urun_ID" />
@@ -151,6 +222,7 @@
           <Property Name="Stok_Durumu" Type="nvarchar" MaxLength="50" />
           <Property Name="Stok_Miktari" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Tedarikci_ID" Type="int" />
+          <Property Name="Durum_ID" Type="int" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -182,6 +254,54 @@
               <PropertyRef Name="Urun_ID" />
             </Principal>
             <Dependent Role="ALB_BOYAHANETAKIP">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_FASON__Fason__03F0984C">
+          <End Role="ALB_FASON_SIRKETLER" Type="Self.ALB_FASON_SIRKETLER" Multiplicity="0..1" />
+          <End Role="ALB_FASON_TAKIP" Type="Self.ALB_FASON_TAKIP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_FASON_SIRKETLER">
+              <PropertyRef Name="Fason_Sirket_ID" />
+            </Principal>
+            <Dependent Role="ALB_FASON_TAKIP">
+              <PropertyRef Name="Fason_Sirket_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_FASON__Urun___02FC7413">
+          <End Role="ALB_URUNLER" Type="Self.ALB_URUNLER" Multiplicity="0..1" />
+          <End Role="ALB_FASON_TAKIP" Type="Self.ALB_FASON_TAKIP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_FASON_TAKIP">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_IS_EM__Sorum__0D7A0286">
+          <End Role="ALB_PERSONEL" Type="Self.ALB_PERSONEL" Multiplicity="0..1" />
+          <End Role="ALB_IS_EMIRLERI" Type="Self.ALB_IS_EMIRLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_PERSONEL">
+              <PropertyRef Name="Personel_ID" />
+            </Principal>
+            <Dependent Role="ALB_IS_EMIRLERI">
+              <PropertyRef Name="Sorumlu_Personel_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_IS_EM__Urun___0C85DE4D">
+          <End Role="ALB_URUNLER" Type="Self.ALB_URUNLER" Multiplicity="0..1" />
+          <End Role="ALB_IS_EMIRLERI" Type="Self.ALB_IS_EMIRLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_IS_EMIRLERI">
               <PropertyRef Name="Urun_ID" />
             </Dependent>
           </ReferentialConstraint>
@@ -270,6 +390,42 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK__ALB_TOPLA__Urun___10566F31">
+          <End Role="ALB_URUNLER" Type="Self.ALB_URUNLER" Multiplicity="0..1" />
+          <End Role="ALB_TOPLAM_URETIM_MALIYETLERI" Type="Self.ALB_TOPLAM_URETIM_MALIYETLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_TOPLAM_URETIM_MALIYETLERI">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_URETI__Urun___0B91BA14">
+          <End Role="ALB_URUNLER" Type="Self.ALB_URUNLER" Multiplicity="0..1" />
+          <End Role="ALB_URETIM_MALIYETLERI" Type="Self.ALB_URETIM_MALIYETLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_URETIM_MALIYETLERI">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_URUNL__Durum__7E37BEF6">
+          <End Role="ALB_URUN_DURUM" Type="Self.ALB_URUN_DURUM" Multiplicity="0..1" />
+          <End Role="ALB_URUNLER" Type="Self.ALB_URUNLER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUN_DURUM">
+              <PropertyRef Name="Durum_ID" />
+            </Principal>
+            <Dependent Role="ALB_URUNLER">
+              <PropertyRef Name="Durum_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__ALB_URUNL__Kateg__3A81B327">
           <End Role="ALB_KATEGORILER" Type="Self.ALB_KATEGORILER" Multiplicity="0..1" />
           <End Role="ALB_URUNLER" Type="Self.ALB_URUNLER" Multiplicity="*" />
@@ -286,16 +442,23 @@
           <EntitySet Name="ALB_BARKODGUNCELLEME" EntityType="Self.ALB_BARKODGUNCELLEME" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_BOYAHANETAKIP" EntityType="Self.ALB_BOYAHANETAKIP" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_DEPARTMAN" EntityType="Self.ALB_DEPARTMAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_FASON_SIRKETLER" EntityType="Self.ALB_FASON_SIRKETLER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_FASON_TAKIP" EntityType="Self.ALB_FASON_TAKIP" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_FINANS" EntityType="Self.ALB_FINANS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_HAREKETTIPI" EntityType="Self.ALB_HAREKETTIPI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_IS_EMIRLERI" EntityType="Self.ALB_IS_EMIRLERI" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_KATEGORILER" EntityType="Self.ALB_KATEGORILER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_KULLANICIYETKI" EntityType="Self.ALB_KULLANICIYETKI" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_MUSTERILER" EntityType="Self.ALB_MUSTERILER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_NOTLAR" EntityType="Self.ALB_NOTLAR" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_PERSONEL" EntityType="Self.ALB_PERSONEL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_SIPARISDETAY" EntityType="Self.ALB_SIPARISDETAY" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_SIPARISLER" EntityType="Self.ALB_SIPARISLER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_STOKHAREKET" EntityType="Self.ALB_STOKHAREKET" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_STOKKONTROL" EntityType="Self.ALB_STOKKONTROL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_TOPLAM_URETIM_MALIYETLERI" EntityType="Self.ALB_TOPLAM_URETIM_MALIYETLERI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_URETIM_MALIYETLERI" EntityType="Self.ALB_URETIM_MALIYETLERI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ALB_URUN_DURUM" EntityType="Self.ALB_URUN_DURUM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ALB_URUNLER" EntityType="Self.ALB_URUNLER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__ALB_BARKO__Kulla__59063A47" Association="Self.FK__ALB_BARKO__Kulla__59063A47">
@@ -305,6 +468,22 @@
           <AssociationSet Name="FK__ALB_BOYAH__Urun___4E88ABD4" Association="Self.FK__ALB_BOYAH__Urun___4E88ABD4">
             <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
             <End Role="ALB_BOYAHANETAKIP" EntitySet="ALB_BOYAHANETAKIP" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_FASON__Fason__03F0984C" Association="Self.FK__ALB_FASON__Fason__03F0984C">
+            <End Role="ALB_FASON_SIRKETLER" EntitySet="ALB_FASON_SIRKETLER" />
+            <End Role="ALB_FASON_TAKIP" EntitySet="ALB_FASON_TAKIP" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_FASON__Urun___02FC7413" Association="Self.FK__ALB_FASON__Urun___02FC7413">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_FASON_TAKIP" EntitySet="ALB_FASON_TAKIP" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_IS_EM__Sorum__0D7A0286" Association="Self.FK__ALB_IS_EM__Sorum__0D7A0286">
+            <End Role="ALB_PERSONEL" EntitySet="ALB_PERSONEL" />
+            <End Role="ALB_IS_EMIRLERI" EntitySet="ALB_IS_EMIRLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_IS_EM__Urun___0C85DE4D" Association="Self.FK__ALB_IS_EM__Urun___0C85DE4D">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_IS_EMIRLERI" EntitySet="ALB_IS_EMIRLERI" />
           </AssociationSet>
           <AssociationSet Name="FK__ALB_PERSO__Depar__534D60F1" Association="Self.FK__ALB_PERSO__Depar__534D60F1">
             <End Role="ALB_DEPARTMAN" EntitySet="ALB_DEPARTMAN" />
@@ -334,13 +513,24 @@
             <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
             <End Role="ALB_STOKKONTROL" EntitySet="ALB_STOKKONTROL" />
           </AssociationSet>
+          <AssociationSet Name="FK__ALB_TOPLA__Urun___10566F31" Association="Self.FK__ALB_TOPLA__Urun___10566F31">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_TOPLAM_URETIM_MALIYETLERI" EntitySet="ALB_TOPLAM_URETIM_MALIYETLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_URETI__Urun___0B91BA14" Association="Self.FK__ALB_URETI__Urun___0B91BA14">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_URETIM_MALIYETLERI" EntitySet="ALB_URETIM_MALIYETLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_URUNL__Durum__7E37BEF6" Association="Self.FK__ALB_URUNL__Durum__7E37BEF6">
+            <End Role="ALB_URUN_DURUM" EntitySet="ALB_URUN_DURUM" />
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+          </AssociationSet>
           <AssociationSet Name="FK__ALB_URUNL__Kateg__3A81B327" Association="Self.FK__ALB_URUNL__Kateg__3A81B327">
             <End Role="ALB_KATEGORILER" EntitySet="ALB_KATEGORILER" />
             <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DB_ALBER_TEKSTİLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -425,9 +615,12 @@
           <Property Name="Musteri_Adi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Musteri_Soyad" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Musteri_Sirket" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="Musteri_Tel_No" Type="Int32" />
+          <Property Name="Musteri_Tel_No" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="Musteri_Mail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ALB_SIPARISLER" Relationship="Self.FK__ALB_SIPAR__Muste__3F466844" FromRole="ALB_MUSTERILER" ToRole="ALB_SIPARISLER" />
+          <Property Name="Musteri_Adres" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Musteri_Il" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Musteri_Ilce" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="ALB_PERSONEL">
           <Key>
@@ -436,13 +629,14 @@
           <Property Name="Personel_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Personel_Adi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Personel_Soyadi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="Personel_TC" Type="Int32" />
-          <Property Name="Personel_Tel_No" Type="Int32" />
+          <Property Name="Personel_TC" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Personel_Tel_No" Type="String" />
           <Property Name="Personel_Mail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Personel_Pozisyon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Departman_ID" Type="Int32" />
           <NavigationProperty Name="ALB_BARKODGUNCELLEME" Relationship="Self.FK__ALB_BARKO__Kulla__59063A47" FromRole="ALB_PERSONEL" ToRole="ALB_BARKODGUNCELLEME" />
           <NavigationProperty Name="ALB_DEPARTMAN" Relationship="Self.FK__ALB_PERSO__Depar__534D60F1" FromRole="ALB_PERSONEL" ToRole="ALB_DEPARTMAN" />
+          <NavigationProperty Name="ALB_IS_EMIRLERI" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_IS_EM__Sorum__0D7A0286" FromRole="ALB_PERSONEL" ToRole="ALB_IS_EMIRLERI" />
         </EntityType>
         <EntityType Name="ALB_SIPARISDETAY">
           <Key>
@@ -510,6 +704,12 @@
           <NavigationProperty Name="ALB_SIPARISDETAY" Relationship="Self.FK__ALB_SIPAR__Urun___4316F928" FromRole="ALB_URUNLER" ToRole="ALB_SIPARISDETAY" />
           <NavigationProperty Name="ALB_STOKHAREKET" Relationship="Self.FK__ALB_STOKH__Urun___47DBAE45" FromRole="ALB_URUNLER" ToRole="ALB_STOKHAREKET" />
           <NavigationProperty Name="ALB_STOKKONTROL" Relationship="Self.FK__ALB_STOKK__Urun___4BAC3F29" FromRole="ALB_URUNLER" ToRole="ALB_STOKKONTROL" />
+          <Property Name="Durum_ID" Type="Int32" />
+          <NavigationProperty Name="ALB_FASON_TAKIP" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_FASON__Urun___02FC7413" FromRole="ALB_URUNLER" ToRole="ALB_FASON_TAKIP" />
+          <NavigationProperty Name="ALB_IS_EMIRLERI" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_IS_EM__Urun___0C85DE4D" FromRole="ALB_URUNLER" ToRole="ALB_IS_EMIRLERI" />
+          <NavigationProperty Name="ALB_TOPLAM_URETIM_MALIYETLERI" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_TOPLA__Urun___10566F31" FromRole="ALB_URUNLER" ToRole="ALB_TOPLAM_URETIM_MALIYETLERI" />
+          <NavigationProperty Name="ALB_URETIM_MALIYETLERI" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_URETI__Urun___0B91BA14" FromRole="ALB_URUNLER" ToRole="ALB_URETIM_MALIYETLERI" />
+          <NavigationProperty Name="ALB_URUN_DURUM" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_URUNL__Durum__7E37BEF6" FromRole="ALB_URUNLER" ToRole="ALB_URUN_DURUM" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -697,7 +897,202 @@
             <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
             <End Role="ALB_STOKKONTROL" EntitySet="ALB_STOKKONTROL" />
           </AssociationSet>
+          <EntitySet Name="ALB_FASON_SIRKETLER" EntityType="DB_ALBER_TEKSTİLModel.ALB_FASON_SIRKETLER" />
+          <EntitySet Name="ALB_FASON_TAKIP" EntityType="DB_ALBER_TEKSTİLModel.ALB_FASON_TAKIP" />
+          <EntitySet Name="ALB_IS_EMIRLERI" EntityType="DB_ALBER_TEKSTİLModel.ALB_IS_EMIRLERI" />
+          <EntitySet Name="ALB_NOTLAR" EntityType="DB_ALBER_TEKSTİLModel.ALB_NOTLAR" />
+          <EntitySet Name="ALB_TOPLAM_URETIM_MALIYETLERI" EntityType="DB_ALBER_TEKSTİLModel.ALB_TOPLAM_URETIM_MALIYETLERI" />
+          <EntitySet Name="ALB_URETIM_MALIYETLERI" EntityType="DB_ALBER_TEKSTİLModel.ALB_URETIM_MALIYETLERI" />
+          <EntitySet Name="ALB_URUN_DURUM" EntityType="DB_ALBER_TEKSTİLModel.ALB_URUN_DURUM" />
+          <AssociationSet Name="FK__ALB_FASON__Fason__03F0984C" Association="DB_ALBER_TEKSTİLModel.FK__ALB_FASON__Fason__03F0984C">
+            <End Role="ALB_FASON_SIRKETLER" EntitySet="ALB_FASON_SIRKETLER" />
+            <End Role="ALB_FASON_TAKIP" EntitySet="ALB_FASON_TAKIP" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_FASON__Urun___02FC7413" Association="DB_ALBER_TEKSTİLModel.FK__ALB_FASON__Urun___02FC7413">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_FASON_TAKIP" EntitySet="ALB_FASON_TAKIP" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_IS_EM__Sorum__0D7A0286" Association="DB_ALBER_TEKSTİLModel.FK__ALB_IS_EM__Sorum__0D7A0286">
+            <End Role="ALB_PERSONEL" EntitySet="ALB_PERSONEL" />
+            <End Role="ALB_IS_EMIRLERI" EntitySet="ALB_IS_EMIRLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_IS_EM__Urun___0C85DE4D" Association="DB_ALBER_TEKSTİLModel.FK__ALB_IS_EM__Urun___0C85DE4D">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_IS_EMIRLERI" EntitySet="ALB_IS_EMIRLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_TOPLA__Urun___10566F31" Association="DB_ALBER_TEKSTİLModel.FK__ALB_TOPLA__Urun___10566F31">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_TOPLAM_URETIM_MALIYETLERI" EntitySet="ALB_TOPLAM_URETIM_MALIYETLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_URETI__Urun___0B91BA14" Association="DB_ALBER_TEKSTİLModel.FK__ALB_URETI__Urun___0B91BA14">
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+            <End Role="ALB_URETIM_MALIYETLERI" EntitySet="ALB_URETIM_MALIYETLERI" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ALB_URUNL__Durum__7E37BEF6" Association="DB_ALBER_TEKSTİLModel.FK__ALB_URUNL__Durum__7E37BEF6">
+            <End Role="ALB_URUN_DURUM" EntitySet="ALB_URUN_DURUM" />
+            <End Role="ALB_URUNLER" EntitySet="ALB_URUNLER" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="ALB_FASON_SIRKETLER">
+          <Key>
+            <PropertyRef Name="Fason_Sirket_ID" />
+          </Key>
+          <Property Name="Fason_Sirket_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sirket_Adi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Iletisim_Bilgileri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ALB_FASON_TAKIP" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_FASON__Fason__03F0984C" FromRole="ALB_FASON_SIRKETLER" ToRole="ALB_FASON_TAKIP" />
+        </EntityType>
+        <EntityType Name="ALB_FASON_TAKIP">
+          <Key>
+            <PropertyRef Name="Fason_Takip_ID" />
+          </Key>
+          <Property Name="Fason_Takip_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_ID" Type="Int32" />
+          <Property Name="Fason_Sirket_ID" Type="Int32" />
+          <Property Name="Gonderilen_Miktar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Gonderim_Tarihi" Type="DateTime" Precision="0" />
+          <Property Name="Durum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ALB_FASON_SIRKETLER" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_FASON__Fason__03F0984C" FromRole="ALB_FASON_TAKIP" ToRole="ALB_FASON_SIRKETLER" />
+          <NavigationProperty Name="ALB_URUNLER" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_FASON__Urun___02FC7413" FromRole="ALB_FASON_TAKIP" ToRole="ALB_URUNLER" />
+        </EntityType>
+        <EntityType Name="ALB_IS_EMIRLERI">
+          <Key>
+            <PropertyRef Name="Is_Emri_Id" />
+          </Key>
+          <Property Name="Is_Emri_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_ID" Type="Int32" />
+          <Property Name="Is_Emri_Tarihi" Type="DateTime" Precision="0" />
+          <Property Name="Beklenen_Tamamlanma_Tarihi" Type="DateTime" Precision="0" />
+          <Property Name="Sorumlu_Personel_ID" Type="Int32" />
+          <Property Name="Durum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ALB_PERSONEL" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_IS_EM__Sorum__0D7A0286" FromRole="ALB_IS_EMIRLERI" ToRole="ALB_PERSONEL" />
+          <NavigationProperty Name="ALB_URUNLER" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_IS_EM__Urun___0C85DE4D" FromRole="ALB_IS_EMIRLERI" ToRole="ALB_URUNLER" />
+        </EntityType>
+        <EntityType Name="ALB_NOTLAR">
+          <Key>
+            <PropertyRef Name="Not_Id" />
+          </Key>
+          <Property Name="Not_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Not_Baslik" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Not_Icerik" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Not_Durum" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="ALB_TOPLAM_URETIM_MALIYETLERI">
+          <Key>
+            <PropertyRef Name="Toplam_Maliyet_ID" />
+          </Key>
+          <Property Name="Toplam_Maliyet_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_ID" Type="Int32" />
+          <Property Name="Toplam_Maliyet" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Hesaplama_Tarihi" Type="DateTime" Precision="0" />
+          <Property Name="Aciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ALB_URUNLER" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_TOPLA__Urun___10566F31" FromRole="ALB_TOPLAM_URETIM_MALIYETLERI" ToRole="ALB_URUNLER" />
+        </EntityType>
+        <EntityType Name="ALB_URETIM_MALIYETLERI">
+          <Key>
+            <PropertyRef Name="Maliyet_ID" />
+          </Key>
+          <Property Name="Maliyet_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_ID" Type="Int32" />
+          <Property Name="Maliyet_Kalem" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Miktar" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Birim_Maliyet" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Toplam_Maliyet" Type="Decimal" Precision="37" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="ALB_URUNLER" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_URETI__Urun___0B91BA14" FromRole="ALB_URETIM_MALIYETLERI" ToRole="ALB_URUNLER" />
+        </EntityType>
+        <EntityType Name="ALB_URUN_DURUM">
+          <Key>
+            <PropertyRef Name="Durum_ID" />
+          </Key>
+          <Property Name="Durum_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Durum_Adi" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ALB_URUNLER" Relationship="DB_ALBER_TEKSTİLModel.FK__ALB_URUNL__Durum__7E37BEF6" FromRole="ALB_URUN_DURUM" ToRole="ALB_URUNLER" />
+        </EntityType>
+        <Association Name="FK__ALB_FASON__Fason__03F0984C">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_FASON_SIRKETLER" Role="ALB_FASON_SIRKETLER" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_FASON_TAKIP" Role="ALB_FASON_TAKIP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_FASON_SIRKETLER">
+              <PropertyRef Name="Fason_Sirket_ID" />
+            </Principal>
+            <Dependent Role="ALB_FASON_TAKIP">
+              <PropertyRef Name="Fason_Sirket_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_FASON__Urun___02FC7413">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URUNLER" Role="ALB_URUNLER" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_FASON_TAKIP" Role="ALB_FASON_TAKIP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_FASON_TAKIP">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_IS_EM__Sorum__0D7A0286">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_PERSONEL" Role="ALB_PERSONEL" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_IS_EMIRLERI" Role="ALB_IS_EMIRLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_PERSONEL">
+              <PropertyRef Name="Personel_ID" />
+            </Principal>
+            <Dependent Role="ALB_IS_EMIRLERI">
+              <PropertyRef Name="Sorumlu_Personel_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_IS_EM__Urun___0C85DE4D">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URUNLER" Role="ALB_URUNLER" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_IS_EMIRLERI" Role="ALB_IS_EMIRLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_IS_EMIRLERI">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_TOPLA__Urun___10566F31">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URUNLER" Role="ALB_URUNLER" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_TOPLAM_URETIM_MALIYETLERI" Role="ALB_TOPLAM_URETIM_MALIYETLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_TOPLAM_URETIM_MALIYETLERI">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_URETI__Urun___0B91BA14">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URUNLER" Role="ALB_URUNLER" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URETIM_MALIYETLERI" Role="ALB_URETIM_MALIYETLERI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUNLER">
+              <PropertyRef Name="Urun_ID" />
+            </Principal>
+            <Dependent Role="ALB_URETIM_MALIYETLERI">
+              <PropertyRef Name="Urun_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ALB_URUNL__Durum__7E37BEF6">
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URUN_DURUM" Role="ALB_URUN_DURUM" Multiplicity="0..1" />
+          <End Type="DB_ALBER_TEKSTİLModel.ALB_URUNLER" Role="ALB_URUNLER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALB_URUN_DURUM">
+              <PropertyRef Name="Durum_ID" />
+            </Principal>
+            <Dependent Role="ALB_URUNLER">
+              <PropertyRef Name="Durum_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -782,6 +1177,9 @@
           <EntitySetMapping Name="ALB_MUSTERILER">
             <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_MUSTERILER">
               <MappingFragment StoreEntitySet="ALB_MUSTERILER">
+                <ScalarProperty Name="Musteri_Ilce" ColumnName="Musteri_Ilce" />
+                <ScalarProperty Name="Musteri_Il" ColumnName="Musteri_Il" />
+                <ScalarProperty Name="Musteri_Adres" ColumnName="Musteri_Adres" />
                 <ScalarProperty Name="Musteri_ID" ColumnName="Musteri_ID" />
                 <ScalarProperty Name="Musteri_Adi" ColumnName="Musteri_Adi" />
                 <ScalarProperty Name="Musteri_Soyad" ColumnName="Musteri_Soyad" />
@@ -852,6 +1250,7 @@
           <EntitySetMapping Name="ALB_URUNLER">
             <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_URUNLER">
               <MappingFragment StoreEntitySet="ALB_URUNLER">
+                <ScalarProperty Name="Durum_ID" ColumnName="Durum_ID" />
                 <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
                 <ScalarProperty Name="Urun_Adi" ColumnName="Urun_Adi" />
                 <ScalarProperty Name="Urun_Barkod" ColumnName="Urun_Barkod" />
@@ -873,6 +1272,81 @@
                 <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
                 <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_FASON_SIRKETLER">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_FASON_SIRKETLER">
+              <MappingFragment StoreEntitySet="ALB_FASON_SIRKETLER">
+                <ScalarProperty Name="Iletisim_Bilgileri" ColumnName="Iletisim_Bilgileri" />
+                <ScalarProperty Name="Sirket_Adi" ColumnName="Sirket_Adi" />
+                <ScalarProperty Name="Fason_Sirket_ID" ColumnName="Fason_Sirket_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_FASON_TAKIP">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_FASON_TAKIP">
+              <MappingFragment StoreEntitySet="ALB_FASON_TAKIP">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Gonderim_Tarihi" ColumnName="Gonderim_Tarihi" />
+                <ScalarProperty Name="Gonderilen_Miktar" ColumnName="Gonderilen_Miktar" />
+                <ScalarProperty Name="Fason_Sirket_ID" ColumnName="Fason_Sirket_ID" />
+                <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+                <ScalarProperty Name="Fason_Takip_ID" ColumnName="Fason_Takip_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_IS_EMIRLERI">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_IS_EMIRLERI">
+              <MappingFragment StoreEntitySet="ALB_IS_EMIRLERI">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Sorumlu_Personel_ID" ColumnName="Sorumlu_Personel_ID" />
+                <ScalarProperty Name="Beklenen_Tamamlanma_Tarihi" ColumnName="Beklenen_Tamamlanma_Tarihi" />
+                <ScalarProperty Name="Is_Emri_Tarihi" ColumnName="Is_Emri_Tarihi" />
+                <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+                <ScalarProperty Name="Is_Emri_Id" ColumnName="Is_Emri_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_NOTLAR">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_NOTLAR">
+              <MappingFragment StoreEntitySet="ALB_NOTLAR">
+                <ScalarProperty Name="Not_Durum" ColumnName="Not_Durum" />
+                <ScalarProperty Name="Not_Icerik" ColumnName="Not_Icerik" />
+                <ScalarProperty Name="Not_Baslik" ColumnName="Not_Baslik" />
+                <ScalarProperty Name="Not_Id" ColumnName="Not_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_TOPLAM_URETIM_MALIYETLERI">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_TOPLAM_URETIM_MALIYETLERI">
+              <MappingFragment StoreEntitySet="ALB_TOPLAM_URETIM_MALIYETLERI">
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Hesaplama_Tarihi" ColumnName="Hesaplama_Tarihi" />
+                <ScalarProperty Name="Toplam_Maliyet" ColumnName="Toplam_Maliyet" />
+                <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+                <ScalarProperty Name="Toplam_Maliyet_ID" ColumnName="Toplam_Maliyet_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_URETIM_MALIYETLERI">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_URETIM_MALIYETLERI">
+              <MappingFragment StoreEntitySet="ALB_URETIM_MALIYETLERI">
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Toplam_Maliyet" ColumnName="Toplam_Maliyet" />
+                <ScalarProperty Name="Birim_Maliyet" ColumnName="Birim_Maliyet" />
+                <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+                <ScalarProperty Name="Maliyet_Kalem" ColumnName="Maliyet_Kalem" />
+                <ScalarProperty Name="Urun_ID" ColumnName="Urun_ID" />
+                <ScalarProperty Name="Maliyet_ID" ColumnName="Maliyet_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALB_URUN_DURUM">
+            <EntityTypeMapping TypeName="DB_ALBER_TEKSTİLModel.ALB_URUN_DURUM">
+              <MappingFragment StoreEntitySet="ALB_URUN_DURUM">
+                <ScalarProperty Name="Durum_Adi" ColumnName="Durum_Adi" />
+                <ScalarProperty Name="Durum_ID" ColumnName="Durum_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

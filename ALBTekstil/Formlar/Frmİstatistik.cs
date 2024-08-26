@@ -51,6 +51,10 @@ namespace ALBTekstil.Formlar
 
             //X ÜRÜNÜN STOK SAYISI 
             // labelControl21.Text = db.ALB_URUNLER.Count(x => x.KategoriID == 4).ToString();
+
+            //Toplam marka sayısı çekme tedarikçi sayısı çekme 
+            //labelControl33.Text = (from x in db.ALB_URUNLER
+            //                       select x.Tedarikci_ID).Distinct().Count().ToString();
         }
 
         private void labelControl29_Click(object sender, EventArgs e)

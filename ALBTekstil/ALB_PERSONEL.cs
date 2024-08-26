@@ -18,13 +18,14 @@ namespace ALBTekstil
         public ALB_PERSONEL()
         {
             this.ALB_BARKODGUNCELLEME = new HashSet<ALB_BARKODGUNCELLEME>();
+            this.ALB_IS_EMIRLERI = new HashSet<ALB_IS_EMIRLERI>();
         }
     
         public int Personel_ID { get; set; }
         public string Personel_Adi { get; set; }
         public string Personel_Soyadi { get; set; }
-        public Nullable<int> Personel_TC { get; set; }
-        public Nullable<int> Personel_Tel_No { get; set; }
+        public string Personel_TC { get; set; }
+        public string Personel_Tel_No { get; set; }
         public string Personel_Mail { get; set; }
         public string Personel_Pozisyon { get; set; }
         public Nullable<int> Departman_ID { get; set; }
@@ -32,5 +33,7 @@ namespace ALBTekstil
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ALB_BARKODGUNCELLEME> ALB_BARKODGUNCELLEME { get; set; }
         public virtual ALB_DEPARTMAN ALB_DEPARTMAN { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ALB_IS_EMIRLERI> ALB_IS_EMIRLERI { get; set; }
     }
 }

@@ -21,6 +21,10 @@ namespace ALBTekstil
             this.ALB_SIPARISDETAY = new HashSet<ALB_SIPARISDETAY>();
             this.ALB_STOKHAREKET = new HashSet<ALB_STOKHAREKET>();
             this.ALB_STOKKONTROL = new HashSet<ALB_STOKKONTROL>();
+            this.ALB_FASON_TAKIP = new HashSet<ALB_FASON_TAKIP>();
+            this.ALB_IS_EMIRLERI = new HashSet<ALB_IS_EMIRLERI>();
+            this.ALB_TOPLAM_URETIM_MALIYETLERI = new HashSet<ALB_TOPLAM_URETIM_MALIYETLERI>();
+            this.ALB_URETIM_MALIYETLERI = new HashSet<ALB_URETIM_MALIYETLERI>();
         }
     
         public int Urun_ID { get; set; }
@@ -33,6 +37,7 @@ namespace ALBTekstil
         public string Stok_Durumu { get; set; }
         public Nullable<decimal> Stok_Miktari { get; set; }
         public Nullable<int> Tedarikci_ID { get; set; }
+        public Nullable<int> Durum_ID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ALB_BOYAHANETAKIP> ALB_BOYAHANETAKIP { get; set; }
@@ -43,5 +48,14 @@ namespace ALBTekstil
         public virtual ICollection<ALB_STOKHAREKET> ALB_STOKHAREKET { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ALB_STOKKONTROL> ALB_STOKKONTROL { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ALB_FASON_TAKIP> ALB_FASON_TAKIP { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ALB_IS_EMIRLERI> ALB_IS_EMIRLERI { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ALB_TOPLAM_URETIM_MALIYETLERI> ALB_TOPLAM_URETIM_MALIYETLERI { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ALB_URETIM_MALIYETLERI> ALB_URETIM_MALIYETLERI { get; set; }
+        public virtual ALB_URUN_DURUM ALB_URUN_DURUM { get; set; }
     }
 }

@@ -103,6 +103,7 @@
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(22, 24, 22, 24);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -142,8 +143,10 @@
             this.barButtonItem33,
             this.barButtonItem34});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ribbonControl1.MaxItemId = 37;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.OptionsMenuMinWidth = 247;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
@@ -154,7 +157,7 @@
             this.ribbonPage7,
             this.ribbonPage8,
             this.ribbonPage9});
-            this.ribbonControl1.Size = new System.Drawing.Size(2482, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1862, 150);
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // BtnKategoriListe
@@ -200,7 +203,7 @@
             // 
             this.Btnİstatistik.Caption = "Ürün İstatistikleri";
             this.Btnİstatistik.Id = 7;
-            this.Btnİstatistik.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.Btnİstatistik.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Btnİstatistik.ImageOptions.SvgImage")));
             this.Btnİstatistik.Name = "Btnİstatistik";
             this.Btnİstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btnİstatistik_ItemClick);
             // 
@@ -246,6 +249,7 @@
             this.barButtonItem11.Id = 13;
             this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
             this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -449,7 +453,6 @@
             // ribbonPageGroup16
             // 
             this.ribbonPageGroup16.ItemLinks.Add(this.Btnİstatistik);
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             this.ribbonPageGroup16.Text = "ribbonPageGroup16";
             // 
@@ -629,11 +632,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2482, 1325);
+            this.ClientSize = new System.Drawing.Size(1862, 862);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

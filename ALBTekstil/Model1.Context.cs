@@ -40,5 +40,12 @@ namespace ALBTekstil
         public virtual DbSet<ALB_STOKKONTROL> ALB_STOKKONTROL { get; set; }
         public virtual DbSet<ALB_URUNLER> ALB_URUNLER { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<ALB_FASON_SIRKETLER> ALB_FASON_SIRKETLER { get; set; }
+        public virtual DbSet<ALB_FASON_TAKIP> ALB_FASON_TAKIP { get; set; }
+        public virtual DbSet<ALB_IS_EMIRLERI> ALB_IS_EMIRLERI { get; set; }
+        public virtual DbSet<ALB_NOTLAR> ALB_NOTLAR { get; set; }
+        public virtual DbSet<ALB_TOPLAM_URETIM_MALIYETLERI> ALB_TOPLAM_URETIM_MALIYETLERI { get; set; }
+        public virtual DbSet<ALB_URETIM_MALIYETLERI> ALB_URETIM_MALIYETLERI { get; set; }
+        public virtual DbSet<ALB_URUN_DURUM> ALB_URUN_DURUM { get; set; }
     }
 }
