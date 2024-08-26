@@ -30,25 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmİstatistik));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -69,8 +50,26 @@
             this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -97,16 +96,8 @@
             this.pictureEdit17 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             this.panel7.SuspendLayout();
@@ -117,8 +108,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
             this.panel13.SuspendLayout();
@@ -131,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit16.Properties)).BeginInit();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit17.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -148,235 +148,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(331, 167);
             this.panel1.TabIndex = 0;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(23, 32);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(146, 23);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Toplam Ürün Sayısı";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(23, 80);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(81, 62);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "584";
-            // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(207, 53);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(101, 89);
-            this.pictureEdit1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel2.Controls.Add(this.pictureEdit2);
-            this.panel2.Controls.Add(this.labelControl3);
-            this.panel2.Controls.Add(this.labelControl4);
-            this.panel2.Location = new System.Drawing.Point(387, 26);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(331, 167);
-            this.panel2.TabIndex = 3;
-            // 
-            // pictureEdit2
-            // 
-            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(228, 70);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit2.Size = new System.Drawing.Size(81, 72);
-            this.pictureEdit2.TabIndex = 2;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(23, 80);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(54, 62);
-            this.labelControl3.TabIndex = 1;
-            this.labelControl3.Text = "30";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(23, 32);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(172, 23);
-            this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "Toplam Kategori Sayısı";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel3.Controls.Add(this.pictureEdit3);
-            this.panel3.Controls.Add(this.labelControl5);
-            this.panel3.Controls.Add(this.labelControl6);
-            this.panel3.Location = new System.Drawing.Point(760, 26);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(331, 167);
-            this.panel3.TabIndex = 4;
-            // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(226, 70);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(81, 72);
-            this.pictureEdit3.TabIndex = 2;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(23, 80);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(135, 62);
-            this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "10500";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(23, 32);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(141, 23);
-            this.labelControl6.TabIndex = 0;
-            this.labelControl6.Text = "Toplam Stok Sayısı";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel4.Controls.Add(this.pictureEdit4);
-            this.panel4.Controls.Add(this.labelControl7);
-            this.panel4.Controls.Add(this.labelControl8);
-            this.panel4.Location = new System.Drawing.Point(1132, 26);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(331, 167);
-            this.panel4.TabIndex = 4;
-            // 
-            // pictureEdit4
-            // 
-            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(217, 70);
-            this.pictureEdit4.Name = "pictureEdit4";
-            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit4.Size = new System.Drawing.Size(81, 72);
-            this.pictureEdit4.TabIndex = 2;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(23, 80);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(54, 62);
-            this.labelControl7.TabIndex = 1;
-            this.labelControl7.Text = "10";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(23, 32);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(90, 23);
-            this.labelControl8.TabIndex = 0;
-            this.labelControl8.Text = "Kritik Seviye";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel5.Controls.Add(this.pictureEdit5);
-            this.panel5.Controls.Add(this.labelControl9);
-            this.panel5.Controls.Add(this.labelControl10);
-            this.panel5.Location = new System.Drawing.Point(1506, 26);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(331, 167);
-            this.panel5.TabIndex = 4;
-            // 
-            // pictureEdit5
-            // 
-            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(229, 70);
-            this.pictureEdit5.Name = "pictureEdit5";
-            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit5.Size = new System.Drawing.Size(81, 72);
-            this.pictureEdit5.TabIndex = 2;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.Location = new System.Drawing.Point(23, 80);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(54, 62);
-            this.labelControl9.TabIndex = 1;
-            this.labelControl9.Text = "30";
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(23, 32);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(157, 23);
-            this.labelControl10.TabIndex = 0;
-            this.labelControl10.Text = "Toplam Sipariş Sayısı";
             // 
             // panel6
             // 
@@ -488,7 +259,7 @@
             // pictureEdit8
             // 
             this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
-            this.pictureEdit8.Location = new System.Drawing.Point(226, 70);
+            this.pictureEdit8.Location = new System.Drawing.Point(246, 3);
             this.pictureEdit8.Name = "pictureEdit8";
             this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
@@ -618,6 +389,235 @@
             this.labelControl20.TabIndex = 0;
             this.labelControl20.Text = "Toplam Ürün Sayısı";
             // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(207, 53);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(101, 89);
+            this.pictureEdit1.TabIndex = 2;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Location = new System.Drawing.Point(23, 80);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(81, 62);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "584";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(23, 32);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(146, 23);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Toplam Ürün Sayısı";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel2.Controls.Add(this.pictureEdit2);
+            this.panel2.Controls.Add(this.labelControl3);
+            this.panel2.Controls.Add(this.labelControl4);
+            this.panel2.Location = new System.Drawing.Point(387, 26);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(331, 167);
+            this.panel2.TabIndex = 3;
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(245, 3);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit2.Size = new System.Drawing.Size(81, 72);
+            this.pictureEdit2.TabIndex = 2;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(23, 80);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(54, 62);
+            this.labelControl3.TabIndex = 1;
+            this.labelControl3.Text = "30";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(23, 32);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(172, 23);
+            this.labelControl4.TabIndex = 0;
+            this.labelControl4.Text = "Toplam Kategori Sayısı";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel3.Controls.Add(this.pictureEdit3);
+            this.panel3.Controls.Add(this.labelControl5);
+            this.panel3.Controls.Add(this.labelControl6);
+            this.panel3.Location = new System.Drawing.Point(760, 26);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(331, 167);
+            this.panel3.TabIndex = 4;
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(246, 3);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit3.Size = new System.Drawing.Size(81, 72);
+            this.pictureEdit3.TabIndex = 2;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(23, 80);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(135, 62);
+            this.labelControl5.TabIndex = 1;
+            this.labelControl5.Text = "10500";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Location = new System.Drawing.Point(23, 32);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(141, 23);
+            this.labelControl6.TabIndex = 0;
+            this.labelControl6.Text = "Toplam Stok Sayısı";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel4.Controls.Add(this.pictureEdit4);
+            this.panel4.Controls.Add(this.labelControl7);
+            this.panel4.Controls.Add(this.labelControl8);
+            this.panel4.Location = new System.Drawing.Point(1132, 26);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(331, 167);
+            this.panel4.TabIndex = 4;
+            // 
+            // pictureEdit4
+            // 
+            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
+            this.pictureEdit4.Location = new System.Drawing.Point(247, 3);
+            this.pictureEdit4.Name = "pictureEdit4";
+            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit4.Size = new System.Drawing.Size(81, 72);
+            this.pictureEdit4.TabIndex = 2;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.Location = new System.Drawing.Point(23, 80);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(54, 62);
+            this.labelControl7.TabIndex = 1;
+            this.labelControl7.Text = "10";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.Location = new System.Drawing.Point(23, 32);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(90, 23);
+            this.labelControl8.TabIndex = 0;
+            this.labelControl8.Text = "Kritik Seviye";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel5.Controls.Add(this.pictureEdit5);
+            this.panel5.Controls.Add(this.labelControl9);
+            this.panel5.Controls.Add(this.labelControl10);
+            this.panel5.Location = new System.Drawing.Point(1506, 26);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(331, 167);
+            this.panel5.TabIndex = 4;
+            // 
+            // pictureEdit5
+            // 
+            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
+            this.pictureEdit5.Location = new System.Drawing.Point(247, 3);
+            this.pictureEdit5.Name = "pictureEdit5";
+            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit5.Size = new System.Drawing.Size(81, 72);
+            this.pictureEdit5.TabIndex = 2;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Appearance.Options.UseForeColor = true;
+            this.labelControl9.Location = new System.Drawing.Point(23, 80);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(54, 62);
+            this.labelControl9.TabIndex = 1;
+            this.labelControl9.Text = "30";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Appearance.Options.UseForeColor = true;
+            this.labelControl10.Location = new System.Drawing.Point(23, 32);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(157, 23);
+            this.labelControl10.TabIndex = 0;
+            this.labelControl10.Text = "Toplam Sipariş Sayısı";
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.SeaGreen;
@@ -628,19 +628,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(331, 167);
             this.panel11.TabIndex = 15;
-            // 
-            // pictureEdit11
-            // 
-            this.pictureEdit11.EditValue = ((object)(resources.GetObject("pictureEdit11.EditValue")));
-            this.pictureEdit11.Location = new System.Drawing.Point(228, 70);
-            this.pictureEdit11.Name = "pictureEdit11";
-            this.pictureEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit11.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit11.Size = new System.Drawing.Size(81, 72);
-            this.pictureEdit11.TabIndex = 2;
             // 
             // labelControl21
             // 
@@ -681,7 +668,7 @@
             // pictureEdit12
             // 
             this.pictureEdit12.EditValue = ((object)(resources.GetObject("pictureEdit12.EditValue")));
-            this.pictureEdit12.Location = new System.Drawing.Point(229, 70);
+            this.pictureEdit12.Location = new System.Drawing.Point(247, 3);
             this.pictureEdit12.Name = "pictureEdit12";
             this.pictureEdit12.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit12.Properties.Appearance.Options.UseBackColor = true;
@@ -711,9 +698,9 @@
             this.labelControl24.Appearance.Options.UseForeColor = true;
             this.labelControl24.Location = new System.Drawing.Point(23, 32);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(104, 23);
+            this.labelControl24.Size = new System.Drawing.Size(162, 23);
             this.labelControl24.TabIndex = 0;
-            this.labelControl24.Text = "Ham Ürün Kg";
+            this.labelControl24.Text = "En yüksek fiyatlı Ürün";
             // 
             // panel13
             // 
@@ -730,7 +717,7 @@
             // pictureEdit13
             // 
             this.pictureEdit13.EditValue = ((object)(resources.GetObject("pictureEdit13.EditValue")));
-            this.pictureEdit13.Location = new System.Drawing.Point(217, 70);
+            this.pictureEdit13.Location = new System.Drawing.Point(247, 3);
             this.pictureEdit13.Name = "pictureEdit13";
             this.pictureEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit13.Properties.Appearance.Options.UseBackColor = true;
@@ -743,13 +730,13 @@
             // 
             // labelControl25
             // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl25.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl25.Appearance.Options.UseFont = true;
             this.labelControl25.Appearance.Options.UseForeColor = true;
             this.labelControl25.Location = new System.Drawing.Point(23, 80);
             this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(81, 62);
+            this.labelControl25.Size = new System.Drawing.Size(69, 54);
             this.labelControl25.TabIndex = 1;
             this.labelControl25.Text = "300";
             // 
@@ -779,7 +766,7 @@
             // pictureEdit14
             // 
             this.pictureEdit14.EditValue = ((object)(resources.GetObject("pictureEdit14.EditValue")));
-            this.pictureEdit14.Location = new System.Drawing.Point(227, 70);
+            this.pictureEdit14.Location = new System.Drawing.Point(247, 3);
             this.pictureEdit14.Name = "pictureEdit14";
             this.pictureEdit14.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit14.Properties.Appearance.Options.UseBackColor = true;
@@ -791,13 +778,13 @@
             // 
             // labelControl27
             // 
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl27.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl27.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl27.Appearance.Options.UseFont = true;
             this.labelControl27.Appearance.Options.UseForeColor = true;
             this.labelControl27.Location = new System.Drawing.Point(23, 80);
             this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(81, 62);
+            this.labelControl27.Size = new System.Drawing.Size(69, 54);
             this.labelControl27.TabIndex = 1;
             this.labelControl27.Text = "700";
             // 
@@ -827,7 +814,7 @@
             // pictureEdit15
             // 
             this.pictureEdit15.EditValue = ((object)(resources.GetObject("pictureEdit15.EditValue")));
-            this.pictureEdit15.Location = new System.Drawing.Point(227, 70);
+            this.pictureEdit15.Location = new System.Drawing.Point(247, 3);
             this.pictureEdit15.Name = "pictureEdit15";
             this.pictureEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit15.Properties.Appearance.Options.UseBackColor = true;
@@ -848,6 +835,7 @@
             this.labelControl29.Size = new System.Drawing.Size(166, 37);
             this.labelControl29.TabIndex = 1;
             this.labelControl29.Text = "Jakarlı Havlu";
+            this.labelControl29.Click += new System.EventHandler(this.labelControl29_Click);
             // 
             // labelControl30
             // 
@@ -957,6 +945,19 @@
             this.labelControl34.TabIndex = 0;
             this.labelControl34.Text = "Toplam Ürün Sayısı";
             // 
+            // pictureEdit11
+            // 
+            this.pictureEdit11.EditValue = ((object)(resources.GetObject("pictureEdit11.EditValue")));
+            this.pictureEdit11.Location = new System.Drawing.Point(228, 3);
+            this.pictureEdit11.Name = "pictureEdit11";
+            this.pictureEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit11.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit11.Size = new System.Drawing.Size(81, 72);
+            this.pictureEdit11.TabIndex = 2;
+            // 
             // Frmİstatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -979,19 +980,6 @@
             this.Load += new System.EventHandler(this.Frmİstatistik_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
@@ -1007,9 +995,21 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
@@ -1028,6 +1028,7 @@
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit17.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1075,7 +1076,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.LabelControl labelControl20;
         private System.Windows.Forms.Panel panel11;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit11;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private System.Windows.Forms.Panel panel12;
@@ -1102,5 +1102,6 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit17;
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.LabelControl labelControl34;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit11;
     }
 }

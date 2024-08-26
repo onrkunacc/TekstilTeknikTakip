@@ -37,8 +37,25 @@ namespace ALBTekstil.Formlar
             labelControl15.Text = db.ALB_URUNLER.Count().ToString();
             labelControl3.Text = db.ALB_KATEGORILER.Count().ToString();
             labelControl5.Text = db.ALB_URUNLER.Sum(x =>x.Stok_Miktari).ToString();
-            labelControl27.Text = db.ALB_BOYAHANETAKIP.Sum( a => a.Gonderilen_Miktar ).ToString();
-            labelControl25.Text = db.ALB_BOYAHANETAKIP.Sum(a => a.Gelen_Miktar).ToString();
+            labelControl27.Text = db.ALB_BOYAHANETAKIP.Sum( a => a.Gonderilen_Miktar ).ToString() + " Kg";
+            labelControl25.Text = db.ALB_BOYAHANETAKIP.Sum(a => a.Gelen_Miktar).ToString() + " Kg";
+            labelControl29.Text = (from x in  db.ALB_URUNLER 
+                                   orderby x.Stok_Miktari descending
+                                   select x.Urun_Adi).FirstOrDefault();
+            labelControl21.Text = (from x in db.ALB_URUNLER
+                                   orderby x.Stok_Miktari ascending
+                                   select x.Urun_Adi).FirstOrDefault();
+            labelControl7.Text = "10";
+            labelControl9.Text = db.ALB_SIPARISLER.Count().ToString();  
+            labelControl23.Text = db.ALB_URUNLER.Max(a => a.Satis_Fiyati).ToString();
+
+            //X ÜRÜNÜN STOK SAYISI 
+            // labelControl21.Text = db.ALB_URUNLER.Count(x => x.KategoriID == 4).ToString();
+        }
+
+        private void labelControl29_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
