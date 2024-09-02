@@ -65,5 +65,33 @@ namespace ALBTekstil.Formlar
             db.SaveChanges();
             MessageBox.Show("Personel Başarıyla Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = from p in db.ALB_PERSONEL
+                           select new
+                           {
+                               p.Personel_ID,
+                               p.Personel_Adi,
+                               p.Personel_Soyadi,
+                               p.Personel_TC,
+                               p.Personel_Mail,
+                               p.Personel_Tel_No,
+                               p.Personel_Pozisyon,
+                               p.ALB_DEPARTMAN.Departman_Adi
+                           };
+            gridControl1.DataSource = degerler.ToList();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            TxtId.Text = gridView1.GetFocusedRowCellValue("Personel_ID").ToString();
+            TxtAd.Text = gridView1.GetFocusedRowCellValue("Personel_Adi").ToString();
+            TxtSoyad.Text = gridView1.GetFocusedRowCellValue("Personel_Soyadi").ToString();
+            TxtTC.Text = gridView1.GetFocusedRowCellValue("Personel_TC").ToString();
+            TxtTelNo.Text = gridView1.GetFocusedRowCellValue("Personel_Tel_No").ToString();
+            TxtMail.Text = gridView1.GetFocusedRowCellValue("Personel_Mail").ToString();
+            TxtPozisyon.Text = gridView1.GetFocusedRowCellValue("Personel_Pozisyon").ToString();
+        }
     }
 }

@@ -84,5 +84,10 @@ namespace ALBTekstil.Formlar
             db.SaveChanges();
             MessageBox.Show("Kategori bilgileri başarıyla güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,6 +32,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtAciklama = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
@@ -40,15 +42,13 @@
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtAciklama = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -60,6 +60,7 @@
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -89,6 +90,23 @@
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Kategori İşlemleri";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // TxtAciklama
+            // 
+            this.TxtAciklama.Location = new System.Drawing.Point(204, 245);
+            this.TxtAciklama.Name = "TxtAciklama";
+            this.TxtAciklama.Size = new System.Drawing.Size(216, 22);
+            this.TxtAciklama.TabIndex = 26;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(44, 248);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(90, 19);
+            this.labelControl2.TabIndex = 25;
+            this.labelControl2.Text = "Açıklama :";
             // 
             // TxtId
             // 
@@ -173,23 +191,6 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Kategori Adı :";
             // 
-            // TxtAciklama
-            // 
-            this.TxtAciklama.Location = new System.Drawing.Point(204, 245);
-            this.TxtAciklama.Name = "TxtAciklama";
-            this.TxtAciklama.Size = new System.Drawing.Size(216, 22);
-            this.TxtAciklama.TabIndex = 26;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(44, 248);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(90, 19);
-            this.labelControl2.TabIndex = 25;
-            this.labelControl2.Text = "Açıklama :";
-            // 
             // FrmKategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,9 +206,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

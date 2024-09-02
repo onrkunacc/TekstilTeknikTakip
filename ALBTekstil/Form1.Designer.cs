@@ -54,7 +54,7 @@
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDepartmanListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
@@ -130,7 +130,7 @@
             this.barButtonItem20,
             this.BtnDepartmanListesi,
             this.barButtonItem22,
-            this.barButtonItem23,
+            this.BtnHesapMakinesi,
             this.barButtonItem24,
             this.barButtonItem25,
             this.barButtonItem26,
@@ -331,12 +331,13 @@
             this.barButtonItem22.Name = "barButtonItem22";
             this.barButtonItem22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem22_ItemClick);
             // 
-            // barButtonItem23
+            // BtnHesapMakinesi
             // 
-            this.barButtonItem23.Caption = "Hesap Makinesi";
-            this.barButtonItem23.Id = 25;
-            this.barButtonItem23.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem23.ImageOptions.SvgImage")));
-            this.barButtonItem23.Name = "barButtonItem23";
+            this.BtnHesapMakinesi.Caption = "Hesap Makinesi";
+            this.BtnHesapMakinesi.Id = 25;
+            this.BtnHesapMakinesi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem23.ImageOptions.SvgImage")));
+            this.BtnHesapMakinesi.Name = "BtnHesapMakinesi";
+            this.BtnHesapMakinesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHesapMakinesi_ItemClick);
             // 
             // barButtonItem24
             // 
@@ -536,7 +537,7 @@
             // 
             // ribbonPageGroup6
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem23);
+            this.ribbonPageGroup6.ItemLinks.Add(this.BtnHesapMakinesi);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem24);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem25);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem26);
@@ -707,7 +708,7 @@
         private DevExpress.XtraBars.BarButtonItem BtnDepartmanListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem22;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem23;
+        private DevExpress.XtraBars.BarButtonItem BtnHesapMakinesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem24;
         private DevExpress.XtraBars.BarButtonItem barButtonItem25;
         private DevExpress.XtraBars.BarButtonItem barButtonItem26;

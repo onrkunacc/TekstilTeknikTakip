@@ -113,5 +113,10 @@ namespace ALBTekstil
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnHesapMakinesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
     }
 }
