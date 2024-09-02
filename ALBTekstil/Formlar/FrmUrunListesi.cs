@@ -46,8 +46,13 @@ namespace ALBTekstil.Formlar
         {
             //Listeleme ToList Add Remove
             //var degerler = db.ALB_URUNLER.ToList();
-            Metot1();           
-            lookUpEdit1.Properties.DataSource = db.ALB_KATEGORILER.ToList();
+            Metot1();
+            lookUpEdit1.Properties.DataSource = (from x in db.ALB_KATEGORILER
+                                                 select new
+                                                 {
+                                                     x.Kategori_ID,
+                                                     x.KategoriAdi
+                                                 }).ToList();
         }
 
         private void labelControl1_Click(object sender, EventArgs e)
@@ -74,6 +79,7 @@ namespace ALBTekstil.Formlar
         {
             try
             {
+               
                 ALB_URUNLER u = new ALB_URUNLER();
                 u.Urun_Adi = TxtUrunAd.Text;
                 u.Urun_Barkod = TxtBarkod.Text;

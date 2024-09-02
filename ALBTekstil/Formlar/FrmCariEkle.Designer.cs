@@ -32,45 +32,45 @@
             this.BtnVazgeç = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.TxtStokMiktari = new DevExpress.XtraEditors.TextEdit();
+            this.TxtIlce = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.TxtStokDurum = new DevExpress.XtraEditors.TextEdit();
+            this.TxtIl = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.TxtBirim = new DevExpress.XtraEditors.TextEdit();
+            this.TxtAdres = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.TxtSatisFiyati = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMail = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.TxtAlisFiyati = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSirket = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.TxtKategori = new DevExpress.XtraEditors.TextEdit();
+            this.TxtTelNo = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TxtBarkod = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtUrunAd = new DevExpress.XtraEditors.TextEdit();
+            this.TxtCariAdi = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtStokMiktari.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtIlce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtStokDurum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBirim.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSatisFiyati.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyati.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSirket.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtKategori.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBarkod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCariAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +96,7 @@
             this.BtnKaydet.Size = new System.Drawing.Size(171, 51);
             this.BtnKaydet.TabIndex = 82;
             this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // panel8
             // 
@@ -106,20 +107,20 @@
             this.panel8.Size = new System.Drawing.Size(371, 6);
             this.panel8.TabIndex = 79;
             // 
-            // TxtStokMiktari
+            // TxtIlce
             // 
-            this.TxtStokMiktari.EditValue = "İlçe";
-            this.TxtStokMiktari.Location = new System.Drawing.Point(144, 515);
-            this.TxtStokMiktari.Name = "TxtStokMiktari";
-            this.TxtStokMiktari.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtStokMiktari.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtStokMiktari.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtStokMiktari.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtStokMiktari.Properties.Appearance.Options.UseFont = true;
-            this.TxtStokMiktari.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtStokMiktari.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtStokMiktari.Size = new System.Drawing.Size(186, 32);
-            this.TxtStokMiktari.TabIndex = 78;
+            this.TxtIlce.EditValue = "İlçe";
+            this.TxtIlce.Location = new System.Drawing.Point(144, 515);
+            this.TxtIlce.Name = "TxtIlce";
+            this.TxtIlce.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtIlce.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtIlce.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtIlce.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtIlce.Properties.Appearance.Options.UseFont = true;
+            this.TxtIlce.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtIlce.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtIlce.Size = new System.Drawing.Size(186, 32);
+            this.TxtIlce.TabIndex = 78;
             // 
             // pictureEdit8
             // 
@@ -145,20 +146,20 @@
             this.panel7.Size = new System.Drawing.Size(371, 6);
             this.panel7.TabIndex = 76;
             // 
-            // TxtStokDurum
+            // TxtIl
             // 
-            this.TxtStokDurum.EditValue = "İl";
-            this.TxtStokDurum.Location = new System.Drawing.Point(144, 449);
-            this.TxtStokDurum.Name = "TxtStokDurum";
-            this.TxtStokDurum.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtStokDurum.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtStokDurum.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtStokDurum.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtStokDurum.Properties.Appearance.Options.UseFont = true;
-            this.TxtStokDurum.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtStokDurum.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtStokDurum.Size = new System.Drawing.Size(186, 32);
-            this.TxtStokDurum.TabIndex = 75;
+            this.TxtIl.EditValue = "İl";
+            this.TxtIl.Location = new System.Drawing.Point(144, 449);
+            this.TxtIl.Name = "TxtIl";
+            this.TxtIl.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtIl.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtIl.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtIl.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtIl.Properties.Appearance.Options.UseFont = true;
+            this.TxtIl.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtIl.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtIl.Size = new System.Drawing.Size(186, 32);
+            this.TxtIl.TabIndex = 75;
             // 
             // pictureEdit7
             // 
@@ -184,20 +185,20 @@
             this.panel6.Size = new System.Drawing.Size(371, 6);
             this.panel6.TabIndex = 73;
             // 
-            // TxtBirim
+            // TxtAdres
             // 
-            this.TxtBirim.EditValue = "Adres";
-            this.TxtBirim.Location = new System.Drawing.Point(144, 386);
-            this.TxtBirim.Name = "TxtBirim";
-            this.TxtBirim.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtBirim.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtBirim.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtBirim.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtBirim.Properties.Appearance.Options.UseFont = true;
-            this.TxtBirim.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtBirim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtBirim.Size = new System.Drawing.Size(186, 32);
-            this.TxtBirim.TabIndex = 72;
+            this.TxtAdres.EditValue = "Adres";
+            this.TxtAdres.Location = new System.Drawing.Point(144, 386);
+            this.TxtAdres.Name = "TxtAdres";
+            this.TxtAdres.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtAdres.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtAdres.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtAdres.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtAdres.Properties.Appearance.Options.UseFont = true;
+            this.TxtAdres.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtAdres.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtAdres.Size = new System.Drawing.Size(186, 32);
+            this.TxtAdres.TabIndex = 72;
             // 
             // pictureEdit6
             // 
@@ -223,20 +224,20 @@
             this.panel5.Size = new System.Drawing.Size(371, 6);
             this.panel5.TabIndex = 70;
             // 
-            // TxtSatisFiyati
+            // TxtMail
             // 
-            this.TxtSatisFiyati.EditValue = "Mail";
-            this.TxtSatisFiyati.Location = new System.Drawing.Point(144, 321);
-            this.TxtSatisFiyati.Name = "TxtSatisFiyati";
-            this.TxtSatisFiyati.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtSatisFiyati.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtSatisFiyati.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtSatisFiyati.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtSatisFiyati.Properties.Appearance.Options.UseFont = true;
-            this.TxtSatisFiyati.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtSatisFiyati.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtSatisFiyati.Size = new System.Drawing.Size(186, 32);
-            this.TxtSatisFiyati.TabIndex = 69;
+            this.TxtMail.EditValue = "Mail";
+            this.TxtMail.Location = new System.Drawing.Point(144, 321);
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtMail.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtMail.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtMail.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtMail.Properties.Appearance.Options.UseFont = true;
+            this.TxtMail.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtMail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtMail.Size = new System.Drawing.Size(186, 32);
+            this.TxtMail.TabIndex = 69;
             // 
             // pictureEdit5
             // 
@@ -262,20 +263,20 @@
             this.panel4.Size = new System.Drawing.Size(371, 6);
             this.panel4.TabIndex = 67;
             // 
-            // TxtAlisFiyati
+            // TxtSirket
             // 
-            this.TxtAlisFiyati.EditValue = "Şirket Adı";
-            this.TxtAlisFiyati.Location = new System.Drawing.Point(144, 259);
-            this.TxtAlisFiyati.Name = "TxtAlisFiyati";
-            this.TxtAlisFiyati.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtAlisFiyati.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtAlisFiyati.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtAlisFiyati.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtAlisFiyati.Properties.Appearance.Options.UseFont = true;
-            this.TxtAlisFiyati.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtAlisFiyati.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtAlisFiyati.Size = new System.Drawing.Size(186, 32);
-            this.TxtAlisFiyati.TabIndex = 66;
+            this.TxtSirket.EditValue = "Şirket Adı";
+            this.TxtSirket.Location = new System.Drawing.Point(144, 259);
+            this.TxtSirket.Name = "TxtSirket";
+            this.TxtSirket.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtSirket.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtSirket.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtSirket.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtSirket.Properties.Appearance.Options.UseFont = true;
+            this.TxtSirket.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtSirket.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtSirket.Size = new System.Drawing.Size(186, 32);
+            this.TxtSirket.TabIndex = 66;
             // 
             // pictureEdit4
             // 
@@ -301,20 +302,20 @@
             this.panel3.Size = new System.Drawing.Size(371, 6);
             this.panel3.TabIndex = 64;
             // 
-            // TxtKategori
+            // TxtTelNo
             // 
-            this.TxtKategori.EditValue = "Telefon Numarası";
-            this.TxtKategori.Location = new System.Drawing.Point(144, 199);
-            this.TxtKategori.Name = "TxtKategori";
-            this.TxtKategori.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtKategori.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtKategori.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtKategori.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtKategori.Properties.Appearance.Options.UseFont = true;
-            this.TxtKategori.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtKategori.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtKategori.Size = new System.Drawing.Size(186, 32);
-            this.TxtKategori.TabIndex = 63;
+            this.TxtTelNo.EditValue = "Telefon Numarası";
+            this.TxtTelNo.Location = new System.Drawing.Point(144, 199);
+            this.TxtTelNo.Name = "TxtTelNo";
+            this.TxtTelNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtTelNo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtTelNo.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtTelNo.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtTelNo.Properties.Appearance.Options.UseFont = true;
+            this.TxtTelNo.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtTelNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtTelNo.Size = new System.Drawing.Size(186, 32);
+            this.TxtTelNo.TabIndex = 63;
             // 
             // pictureEdit3
             // 
@@ -340,20 +341,20 @@
             this.panel2.Size = new System.Drawing.Size(371, 6);
             this.panel2.TabIndex = 61;
             // 
-            // TxtBarkod
+            // TxtSoyad
             // 
-            this.TxtBarkod.EditValue = "Soyad";
-            this.TxtBarkod.Location = new System.Drawing.Point(144, 133);
-            this.TxtBarkod.Name = "TxtBarkod";
-            this.TxtBarkod.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtBarkod.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtBarkod.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtBarkod.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtBarkod.Properties.Appearance.Options.UseFont = true;
-            this.TxtBarkod.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtBarkod.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtBarkod.Size = new System.Drawing.Size(186, 32);
-            this.TxtBarkod.TabIndex = 60;
+            this.TxtSoyad.EditValue = "Soyad";
+            this.TxtSoyad.Location = new System.Drawing.Point(144, 133);
+            this.TxtSoyad.Name = "TxtSoyad";
+            this.TxtSoyad.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtSoyad.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtSoyad.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtSoyad.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtSoyad.Properties.Appearance.Options.UseFont = true;
+            this.TxtSoyad.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtSoyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtSoyad.Size = new System.Drawing.Size(186, 32);
+            this.TxtSoyad.TabIndex = 60;
             // 
             // panel1
             // 
@@ -379,20 +380,20 @@
             this.pictureEdit2.Size = new System.Drawing.Size(50, 50);
             this.pictureEdit2.TabIndex = 59;
             // 
-            // TxtUrunAd
+            // TxtCariAdi
             // 
-            this.TxtUrunAd.EditValue = "Adı";
-            this.TxtUrunAd.Location = new System.Drawing.Point(144, 70);
-            this.TxtUrunAd.Name = "TxtUrunAd";
-            this.TxtUrunAd.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.TxtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtUrunAd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.TxtUrunAd.Properties.Appearance.Options.UseBackColor = true;
-            this.TxtUrunAd.Properties.Appearance.Options.UseFont = true;
-            this.TxtUrunAd.Properties.Appearance.Options.UseForeColor = true;
-            this.TxtUrunAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.TxtUrunAd.Size = new System.Drawing.Size(186, 32);
-            this.TxtUrunAd.TabIndex = 57;
+            this.TxtCariAdi.EditValue = "Adı";
+            this.TxtCariAdi.Location = new System.Drawing.Point(144, 70);
+            this.TxtCariAdi.Name = "TxtCariAdi";
+            this.TxtCariAdi.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
+            this.TxtCariAdi.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtCariAdi.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.TxtCariAdi.Properties.Appearance.Options.UseBackColor = true;
+            this.TxtCariAdi.Properties.Appearance.Options.UseFont = true;
+            this.TxtCariAdi.Properties.Appearance.Options.UseForeColor = true;
+            this.TxtCariAdi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.TxtCariAdi.Size = new System.Drawing.Size(186, 32);
+            this.TxtCariAdi.TabIndex = 57;
             // 
             // pictureEdit1
             // 
@@ -411,7 +412,7 @@
             // 
             // pictureEdit9
             // 
-            this.pictureEdit9.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureEdit9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
             this.pictureEdit9.Location = new System.Drawing.Point(612, 72);
             this.pictureEdit9.Name = "pictureEdit9";
@@ -430,53 +431,53 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(914, 716);
+            this.ClientSize = new System.Drawing.Size(911, 716);
             this.Controls.Add(this.pictureEdit9);
             this.Controls.Add(this.BtnVazgeç);
             this.Controls.Add(this.BtnKaydet);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.TxtStokMiktari);
+            this.Controls.Add(this.TxtIlce);
             this.Controls.Add(this.pictureEdit8);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.TxtStokDurum);
+            this.Controls.Add(this.TxtIl);
             this.Controls.Add(this.pictureEdit7);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.TxtBirim);
+            this.Controls.Add(this.TxtAdres);
             this.Controls.Add(this.pictureEdit6);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.TxtSatisFiyati);
+            this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.pictureEdit5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.TxtAlisFiyati);
+            this.Controls.Add(this.TxtSirket);
             this.Controls.Add(this.pictureEdit4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.TxtKategori);
+            this.Controls.Add(this.TxtTelNo);
             this.Controls.Add(this.pictureEdit3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.TxtBarkod);
+            this.Controls.Add(this.TxtSoyad);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureEdit2);
-            this.Controls.Add(this.TxtUrunAd);
+            this.Controls.Add(this.TxtCariAdi);
             this.Controls.Add(this.pictureEdit1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCariEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCariEkle";
-            ((System.ComponentModel.ISupportInitialize)(this.TxtStokMiktari.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtStokDurum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtIl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBirim.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSatisFiyati.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyati.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSirket.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtKategori.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBarkod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCariAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -488,28 +489,28 @@
         private DevExpress.XtraEditors.SimpleButton BtnVazgeç;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private System.Windows.Forms.Panel panel8;
-        private DevExpress.XtraEditors.TextEdit TxtStokMiktari;
+        private DevExpress.XtraEditors.TextEdit TxtIlce;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
         private System.Windows.Forms.Panel panel7;
-        private DevExpress.XtraEditors.TextEdit TxtStokDurum;
+        private DevExpress.XtraEditors.TextEdit TxtIl;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.TextEdit TxtBirim;
+        private DevExpress.XtraEditors.TextEdit TxtAdres;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraEditors.TextEdit TxtSatisFiyati;
+        private DevExpress.XtraEditors.TextEdit TxtMail;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.TextEdit TxtAlisFiyati;
+        private DevExpress.XtraEditors.TextEdit TxtSirket;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.TextEdit TxtKategori;
+        private DevExpress.XtraEditors.TextEdit TxtTelNo;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.TextEdit TxtBarkod;
+        private DevExpress.XtraEditors.TextEdit TxtSoyad;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
-        private DevExpress.XtraEditors.TextEdit TxtUrunAd;
+        private DevExpress.XtraEditors.TextEdit TxtCariAdi;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
     }

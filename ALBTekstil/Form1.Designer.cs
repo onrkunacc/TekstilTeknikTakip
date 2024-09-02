@@ -52,7 +52,7 @@
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnDepartmanListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
@@ -128,7 +128,7 @@
             this.barButtonItem18,
             this.barButtonItem19,
             this.barButtonItem20,
-            this.barButtonItem21,
+            this.BtnDepartmanListesi,
             this.barButtonItem22,
             this.barButtonItem23,
             this.barButtonItem24,
@@ -306,6 +306,7 @@
             this.barButtonItem19.Id = 21;
             this.barButtonItem19.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem19.ImageOptions.SvgImage")));
             this.barButtonItem19.Name = "barButtonItem19";
+            this.barButtonItem19.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem19_ItemClick);
             // 
             // barButtonItem20
             // 
@@ -314,13 +315,13 @@
             this.barButtonItem20.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem20.ImageOptions.SvgImage")));
             this.barButtonItem20.Name = "barButtonItem20";
             // 
-            // barButtonItem21
+            // BtnDepartmanListesi
             // 
-            this.barButtonItem21.Caption = "Departman Listesi";
-            this.barButtonItem21.Id = 23;
-            this.barButtonItem21.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem21.ImageOptions.SvgImage")));
-            this.barButtonItem21.Name = "barButtonItem21";
-            this.barButtonItem21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem21_ItemClick);
+            this.BtnDepartmanListesi.Caption = "Departman Listesi";
+            this.BtnDepartmanListesi.Id = 23;
+            this.BtnDepartmanListesi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnDepartmanListesi.ImageOptions.SvgImage")));
+            this.BtnDepartmanListesi.Name = "BtnDepartmanListesi";
+            this.BtnDepartmanListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem21_ItemClick);
             // 
             // barButtonItem22
             // 
@@ -328,6 +329,7 @@
             this.barButtonItem22.Id = 24;
             this.barButtonItem22.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem22.ImageOptions.SvgImage")));
             this.barButtonItem22.Name = "barButtonItem22";
+            this.barButtonItem22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem22_ItemClick);
             // 
             // barButtonItem23
             // 
@@ -520,7 +522,7 @@
             // 
             // ribbonPageGroup19
             // 
-            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem21);
+            this.ribbonPageGroup19.ItemLinks.Add(this.BtnDepartmanListesi);
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem22);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
             this.ribbonPageGroup19.Text = "ribbonPageGroup19";
@@ -702,7 +704,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem21;
+        private DevExpress.XtraBars.BarButtonItem BtnDepartmanListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem22;
         private DevExpress.XtraBars.BarButtonItem barButtonItem23;

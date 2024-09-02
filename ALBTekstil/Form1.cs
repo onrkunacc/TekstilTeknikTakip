@@ -45,7 +45,10 @@ namespace ALBTekstil
 
         private void barButtonItem21_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Formlar.FrmDepartman fr = new Formlar.FrmDepartman();
+            fr.MdiParent = this;
+            //bu form üzerinden çalışsın
+            fr.Show();
         }
 
         private void barButtonItem26_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -94,6 +97,20 @@ namespace ALBTekstil
         {
             Formlar.FrmCariEkle fr = new Formlar.FrmCariEkle();   
             //bu form üzerinden çalışsın
+            fr.Show();
+        }
+
+        private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYeniDepartman fr = new Formlar.FrmYeniDepartman();
+            //bu form üzerinden çalışsın
+            fr.Show();
+        }
+
+        private void barButtonItem19_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmPersonel fr = new Formlar.FrmPersonel();
+            fr.MdiParent = this;
             fr.Show();
         }
     }

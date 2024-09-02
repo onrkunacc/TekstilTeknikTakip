@@ -49,7 +49,7 @@
             // 
             // textEdit9
             // 
-            this.textEdit9.EditValue = "YENİ KATEGORİ EKLEME";
+            this.textEdit9.EditValue = "Departman";
             this.textEdit9.Location = new System.Drawing.Point(223, 27);
             this.textEdit9.Name = "textEdit9";
             this.textEdit9.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(227)))), ((int)(((byte)(242)))));
@@ -172,7 +172,7 @@
             // 
             this.BtnVazgec.Appearance.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnVazgec.Appearance.Options.UseFont = true;
-            this.BtnVazgec.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.BtnVazgec.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnVazgec.ImageOptions.SvgImage")));
             this.BtnVazgec.Location = new System.Drawing.Point(427, 276);
             this.BtnVazgec.Name = "BtnVazgec";
             this.BtnVazgec.Size = new System.Drawing.Size(171, 51);

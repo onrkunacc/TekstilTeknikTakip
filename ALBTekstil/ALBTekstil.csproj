@@ -157,17 +157,35 @@
     <Compile Include="Formlar\FrmCariİller.Designer.cs">
       <DependentUpon>FrmCariİller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmDepartman.Designer.cs">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmKategori.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FrmKategori.Designer.cs">
       <DependentUpon>FrmKategori.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmUrunListesi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FrmUrunListesi.Designer.cs">
       <DependentUpon>FrmUrunListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniDepartman.Designer.cs">
+      <DependentUpon>FrmYeniDepartman.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmYeniKategori.cs">
       <SubType>Form</SubType>
@@ -219,11 +237,20 @@
     <EmbeddedResource Include="Formlar\FrmCariİller.resx">
       <DependentUpon>FrmCariİller.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmDepartman.resx">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmKategori.resx">
       <DependentUpon>FrmKategori.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmUrunListesi.resx">
       <DependentUpon>FrmUrunListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniDepartman.resx">
+      <DependentUpon>FrmYeniDepartman.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmYeniKategori.resx">
       <DependentUpon>FrmYeniKategori.cs</DependentUpon>
