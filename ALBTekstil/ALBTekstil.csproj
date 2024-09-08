@@ -139,6 +139,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmBoyahane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmBoyahane.Designer.cs">
+      <DependentUpon>FrmBoyahane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmBoyahaneUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmBoyahaneUrun.Designer.cs">
+      <DependentUpon>FrmBoyahaneUrun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmCariEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,18 @@
     </Compile>
     <Compile Include="Formlar\FrmKategori.Designer.cs">
       <DependentUpon>FrmKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmKurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmKurlar.Designer.cs">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmNotlar.Designer.cs">
+      <DependentUpon>FrmNotlar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmPersonel.cs">
       <SubType>Form</SubType>
@@ -228,6 +252,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmBoyahane.resx">
+      <DependentUpon>FrmBoyahane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmBoyahaneUrun.resx">
+      <DependentUpon>FrmBoyahaneUrun.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmCariEkle.resx">
       <DependentUpon>FrmCariEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +272,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmKategori.resx">
       <DependentUpon>FrmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmKurlar.resx">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmNotlar.resx">
+      <DependentUpon>FrmNotlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmPersonel.resx">
       <DependentUpon>FrmPersonel.cs</DependentUpon>

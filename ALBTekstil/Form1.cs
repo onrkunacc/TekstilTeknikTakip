@@ -118,5 +118,26 @@ namespace ALBTekstil
         {
             System.Diagnostics.Process.Start("Calc.exe");
         }
+
+        private void BtnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmKurlar fr = new Formlar.FrmKurlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnBoyahane_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmBoyahane fr = new Formlar.FrmBoyahane();
+            fr.MdiParent = this;
+            fr.Show();
+
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmBoyahaneUrun fr = new Formlar.FrmBoyahaneUrun(); 
+            fr.Show();
+        }
     }
 }
